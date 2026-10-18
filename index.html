@@ -35,6 +35,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #1CB5AC;outline-offset:2p
 .lb[aria-pressed="true"]{background:#0B3C5D;color:#fff}
 @media (max-width:600px){h1{font-size:2.2rem!important}h2{font-size:1.8rem!important}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.gal-dlg::backdrop{background:rgba(11,60,93,.75)}
 </style>
 </head>
 <body>
@@ -157,6 +158,12 @@ a:focus-visible,button:focus-visible{outline:3px solid #1CB5AC;outline-offset:2p
 <div style="max-width: 1200px; margin: 0 auto">
 <p style="margin: 0 0 8px; color: #0E7F78; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px">Gallery</p>
 <h2 style="margin: 0 0 48px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.3rem; color: #0B3C5D; line-height: 1.2">Our shipments</h2>
+<p style="margin: -32px 0 28px; color: #3D5568; font-size: 1.05rem">Photos of shipments, packaging and products.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 28px"><img src="aluminium-ingots-warehouse.jpg" alt="Secondary aluminium ingots at the warehouse" loading="lazy" onclick="document.getElementById('gal-dlg-en').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"><img src="aluminium-ingots-2.jpg" alt="Aluminium ingots strapped for shipment" loading="lazy" onclick="document.getElementById('gal-dlg-en').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"><img src="aluminium-pipes-amg6m.jpg" alt="Aluminium mill products — pipes" loading="lazy" onclick="document.getElementById('gal-dlg-en').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"></div>
+<button type="button" onclick="document.getElementById('gal-dlg-en').showModal()" style="padding: 14px 28px; background: #0B3C5D; color: #FFFFFF; border: 0; border-radius: 10px; font-size: 1rem; font-weight: 600; cursor: pointer">View gallery (18 photos)</button>
+<dialog id="gal-dlg-en" class="gal-dlg" onclick="if(event.target===this)this.close()" style="width: min(1200px, 94vw); max-height: 90vh; padding: 0; border: 0; border-radius: 16px; background: #F4F8FA">
+<div style="position: sticky; top: 0; z-index: 2; display: flex; justify-content: flex-end; padding: 12px 16px; background: #F4F8FA; border-bottom: 1px solid #DCE6EA"><button type="button" onclick="this.closest('dialog').close()" style="padding: 8px 18px; background: #FFFFFF; color: #0B3C5D; border: 1px solid #DCE6EA; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer">✕ Close</button></div>
+<div style="padding: 24px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
 <figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-warehouse.jpg" alt="Secondary aluminium ingots at the warehouse" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Secondary aluminium ingots at the warehouse</figcaption></figure>
 <figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-2.jpg" alt="Aluminium ingots strapped for shipment" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Aluminium ingots strapped for shipment</figcaption></figure>
@@ -177,6 +184,8 @@ a:focus-visible,button:focus-visible{outline:3px solid #1CB5AC;outline-offset:2p
 <figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="crates-truck-loading.jpg" alt="Export crates loaded in a truck" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Export crates loaded in a truck</figcaption></figure>
 <figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="pallet-wrapped.jpg" alt="Pallet wrapped for transport" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Pallet wrapped for transport</figcaption></figure>
 </div>
+</div>
+</dialog>
 </div>
 </section>
 
@@ -321,6 +330,12 @@ a:focus-visible,button:focus-visible{outline:3px solid #1CB5AC;outline-offset:2p
 <div style="max-width: 1200px; margin: 0 auto">
 <p style="margin: 0 0 8px; color: #0E7F78; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px">Hình ảnh</p>
 <h2 style="margin: 0 0 48px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.3rem; color: #0B3C5D; line-height: 1.2">Các lô hàng của chúng tôi</h2>
+<p style="margin: -32px 0 28px; color: #3D5568; font-size: 1.05rem">Hình ảnh các lô hàng, đóng gói và sản phẩm.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 28px"><img src="aluminium-ingots-warehouse.jpg" alt="Nhôm thỏi tái chế tại kho" loading="lazy" onclick="document.getElementById('gal-dlg-vi').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"><img src="aluminium-ingots-2.jpg" alt="Nhôm thỏi đã đóng đai chờ xuất" loading="lazy" onclick="document.getElementById('gal-dlg-vi').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"><img src="aluminium-pipes-amg6m.jpg" alt="Nhôm cán — ống" loading="lazy" onclick="document.getElementById('gal-dlg-vi').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"></div>
+<button type="button" onclick="document.getElementById('gal-dlg-vi').showModal()" style="padding: 14px 28px; background: #0B3C5D; color: #FFFFFF; border: 0; border-radius: 10px; font-size: 1rem; font-weight: 600; cursor: pointer">Xem thư viện ảnh (18 ảnh)</button>
+<dialog id="gal-dlg-vi" class="gal-dlg" onclick="if(event.target===this)this.close()" style="width: min(1200px, 94vw); max-height: 90vh; padding: 0; border: 0; border-radius: 16px; background: #F4F8FA">
+<div style="position: sticky; top: 0; z-index: 2; display: flex; justify-content: flex-end; padding: 12px 16px; background: #F4F8FA; border-bottom: 1px solid #DCE6EA"><button type="button" onclick="this.closest('dialog').close()" style="padding: 8px 18px; background: #FFFFFF; color: #0B3C5D; border: 1px solid #DCE6EA; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer">✕ Đóng</button></div>
+<div style="padding: 24px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
 <figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-warehouse.jpg" alt="Nhôm thỏi tái chế tại kho" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Nhôm thỏi tái chế tại kho</figcaption></figure>
 <figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-2.jpg" alt="Nhôm thỏi đã đóng đai chờ xuất" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Nhôm thỏi đã đóng đai chờ xuất</figcaption></figure>
@@ -341,6 +356,8 @@ a:focus-visible,button:focus-visible{outline:3px solid #1CB5AC;outline-offset:2p
 <figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="crates-truck-loading.jpg" alt="Thùng gỗ xuất khẩu trên xe tải" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Thùng gỗ xuất khẩu trên xe tải</figcaption></figure>
 <figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="pallet-wrapped.jpg" alt="Pallet được quấn màng để vận chuyển" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Pallet được quấn màng để vận chuyển</figcaption></figure>
 </div>
+</div>
+</dialog>
 </div>
 </section>
 
@@ -486,6 +503,12 @@ a:focus-visible,button:focus-visible{outline:3px solid #1CB5AC;outline-offset:2p
 <div style="max-width: 1200px; margin: 0 auto">
 <p style="margin: 0 0 8px; color: #0E7F78; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px">Фотогалерея</p>
 <h2 style="margin: 0 0 48px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.3rem; color: #0B3C5D; line-height: 1.2">Наши поставки</h2>
+<p style="margin: -32px 0 28px; color: #3D5568; font-size: 1.05rem">Фото отгрузок, упаковки и продукции.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 28px"><img src="aluminium-ingots-warehouse.jpg" alt="Чушки из вторичного алюминия на складе" loading="lazy" onclick="document.getElementById('gal-dlg-ru').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"><img src="aluminium-ingots-2.jpg" alt="Чушки алюминия, упакованные к отгрузке" loading="lazy" onclick="document.getElementById('gal-dlg-ru').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"><img src="aluminium-pipes-amg6m.jpg" alt="Алюминиевый прокат — трубы" loading="lazy" onclick="document.getElementById('gal-dlg-ru').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"></div>
+<button type="button" onclick="document.getElementById('gal-dlg-ru').showModal()" style="padding: 14px 28px; background: #0B3C5D; color: #FFFFFF; border: 0; border-radius: 10px; font-size: 1rem; font-weight: 600; cursor: pointer">Открыть галерею (18 фото)</button>
+<dialog id="gal-dlg-ru" class="gal-dlg" onclick="if(event.target===this)this.close()" style="width: min(1200px, 94vw); max-height: 90vh; padding: 0; border: 0; border-radius: 16px; background: #F4F8FA">
+<div style="position: sticky; top: 0; z-index: 2; display: flex; justify-content: flex-end; padding: 12px 16px; background: #F4F8FA; border-bottom: 1px solid #DCE6EA"><button type="button" onclick="this.closest('dialog').close()" style="padding: 8px 18px; background: #FFFFFF; color: #0B3C5D; border: 1px solid #DCE6EA; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer">✕ Закрыть</button></div>
+<div style="padding: 24px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
 <figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-warehouse.jpg" alt="Чушки из вторичного алюминия на складе" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Чушки из вторичного алюминия на складе</figcaption></figure>
 <figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-2.jpg" alt="Чушки алюминия, упакованные к отгрузке" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Чушки алюминия, упакованные к отгрузке</figcaption></figure>
@@ -506,6 +529,8 @@ a:focus-visible,button:focus-visible{outline:3px solid #1CB5AC;outline-offset:2p
 <figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="crates-truck-loading.jpg" alt="Экспортные ящики в кузове" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Экспортные ящики в кузове</figcaption></figure>
 <figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="pallet-wrapped.jpg" alt="Паллета, упакованная для перевозки" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Паллета, упакованная для перевозки</figcaption></figure>
 </div>
+</div>
+</dialog>
 </div>
 </section>
 
