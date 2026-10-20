@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interna Group — Export supply from Europe to Southeast Asia</title>
+<meta name="description" content="Interna Group LLC — export supply of industrial goods from Europe to Southeast Asia by air and sea. Sourcing, contracts, customs and international delivery.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cg stroke-linejoin='round'%3E%3Cpolygon points='939,84 259.2,84 939,763.8' fill='%2317C3B2' stroke='%2317C3B2' stroke-width='88'/%3E%3Cpolygon points='84,878.8 449.3,511.5 84,144.2' fill='%230A3D62' stroke='%230A3D62' stroke-width='88'/%3E%3Cpolygon points='211.6,943 886.4,943 550,604.6' fill='%233B6381' stroke='%233B6381' stroke-width='80'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB4klEQVR4AcTXW07CQBQG4HNaHwwLUB5ZhjFg6AI0cQW2xHXYdh9a6gpMcAFtLBp3IY+4AAmJlnHOQHFCep1enHBoU4b5v04npWjwzy0X0I+ex6fRLGi6TuazaT94GtC5ZwKoAwMW8E7jpgsZmOxIn/JxQQCOx+agN5pMexcThw5SLY3rBd+GvFp9CYAWazZPMYGBLSPwJ7YAgSDQVhMABCauhwiREDQL+B0bbSIEQATLbx0i0gGE6QiRDegIkQ/oAFEMaBlRDtAiojygJUQ1QAuI6oCGEWqAHeJ4aNIPFdS5Y6oDCCGVKkIZgADWeu6HZ6Y9GN7ayjOhBKDwr8jzKVjXtQ/GtOB8Yjs0IVVnojJADqdgCqVC1GwVRCVAVjgBqFQQpQFF4QSgqoooB0Bwk2suTzsFplUVRBmAv3rxHFpwZcITUBGC7R71igD+KvKsquG5CIAQeNMYPvLN9qmYdlKqVngy3uFMfI6uDF64HF1uIUnHg20j4cmYMiI5lmzTLkGj4UlQFkIAYp1ZvKMPfLXXueZ8jNwXbm9WptxJANahv6BgWu304WYDf/8ToNmGqN/IIwqAfID2OSBkbOMCIF8ozRZizMeFfUsFvPvu4s1zndeHO6NuHX5/fu/yk9rnwy8AAAD//3CZsqMAAAAGSURBVAMAxPCxUGw8r+IAAAAASUVORK5CYII=">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAKwklEQVR4AeydO4wdVx2Hj9LwKoxkC2wJr6m8EhJJXKSIo6ShIU0sIUQaFGRTUIU0xhG2RGdQghuTCglsFEERkCzZjdNQQHCaFAtCQlpX2bjIgrxSUpBHlezv3j1372tmzpyZOXMeX5T/zsx5n+//7dm79vruI5/xHwQyIvCI4T8IZEQAoTNKJlsxBqGxICsCCJ1VOtkMQhfjQBkbRegy8lzMLhG6mFSXsVGELiPPxewSoYtJdRkbRegy8lzMLhHaGFNMtgvYKEIXkOSStojQJWW7gL0idAFJLmmLCF1StgvYK0IXkOSSttggdEko2GsOBBA6hyyyhxkBhJ6h4CYHAgidQxbZw4wAQs9QcJMDAYTOIYt97CGTMRA6k0SyjSkBhJ5y4GMmBLIU+sGnH5m3P9wz1967TwRm8Mb/HkzYj/X5kZ3QL93/p3ninb+a7/377X2Zt4n3wjIQf7FXDnSghBY7G6F1KgukTojQEJlvlYDycW3yyXR/tXLAkmyEvrZzf6gvdQPiz3/o0FJnIzQnc7yfHG/890GwxWUhNDIH88VrIr380DfpXp1bdspC6AeffNxy2zQPTUBSh5gzC6FPfvFLIVgxRwIERhN6Z/ehUfTB6OyRo30MwxgZEOgmtAeAqzfvmG/94OVZfOWZH0/uVe4x3KTLyS982Vzc2Jzc86FsAkGF/u5Lr5pf3ry9cjLrpFb5T351wzsbz3/9G0Ziew9AxywIBBNaJ/BbW9u10P54997ktK5tVFEpmW89+iRSV/AppTiY0DqBXaDqtNZLEpe2y22QeplIec9BhNbJ2wYtUrehRdt5AkGEnp/Q9R6pXUmFaZfKLEGE3tnd8+Kxs/9He/pG0qczLz98qKXfJ4jQXTDpG0nfP/1A6i7k0+wbvdDCqtfgSC0SRBOBJITWJpBaFIgmAskIrY0gtSgQdQSSElobiU9qrYqIhUByQgscUosCsY5AkkJrI0gtCsQygWSF1kaQWhSIeQJJC62NILUoEJZA8kJrI0gtCoQIDCq0JggVSB2KdNzzZCO0MCO1KJQdWQmtVCK1KJQb2QmtVCK1KJQZWQqtVCK1KJQX2QqtVCK1KASJaCbJWmhRRmpRKCeyF1qpRGpRKCOKEFqpRGpRyD+KEVqpRGpRyDuKElqpRGpRyDeKE1qpDCq1JiSCEShSaNFFalHIL4oVWqmU1HrPPd23Dd4ioS2xMO2LFlqI9Z57SC0SeUTxQiuNSC0KeQRCH+QRqQ9AJH4ZU+jo0CF1dClpvSCEXkKG1EtAEntE6DUJQ+o1UBIpQuiKRCF1BZjIixG6JkFIXQMn0iqEbkgMUjcAcqoO1wihHVgjtQOkSJogtGMikNoR1MjNELpFApC6BayRmiJ0S/BI3RJY4OYI7QEcqT2gBeqC0J6g+5Lac3q6VRBA6AowLsVI7UIpbBuE7sgbqTsC7Lk7QvcAFKl7gNjTEAjdE0ik7glkx2EQuiPA+e5IPU9jnPuIhR4HSNdZkborwW79Ebobv7W9/3T3nnlra3ttXVMh/5q8iVB9PULX8/Gq3dl9aK7+4bZXX3VCalHwC4T249bYSye0orFhRQOkrgDTUIzQDYDGrEbq9vQRuj2zoD2KkLpHogjdI8zloTZOHF0u8npGandsCO3OqlXLHz77lDl1/FirPnWNkbqOzmEdQh+y6PXu8vnneh1PgyG1KNQHQtfz8ap98/qlXk/n+UUg9TyN1XuEXmXSqUQyP31ms9MYTZ2RupoQQlezaV3z259fMD3LXLkGpF6PBqHXc2ldKpn1jaBLxxt3/mau3rw9i/f3PnDpttIGqVeQGIReZdK6xFXmre13zfdf/o2R0Hfv/cvYePHV1ydlrSfe74DU+xDm/kfoORg+t64yS94Xf/262d1bPY1VJsklu88akPqQGkIfsmh910ZmvcRomkBiI3UTpfp6hK7nU1nbt8x2IqS2JPyu6Qrtt99eeg0ls12cpHY50W37+WvpLz8Qet4Gh/uhZbZL0GtupLY03K8I7c7KhJLZLgmpLQn3K0I7sgots10WUlsSbleEduA0lsx2aUhtSTRfEbqB0dgy2+WVLLVl4HJF6BpKschsl4jUlkT1FaEr2MQms10mUlsS668IvYZLrDLbpSK1JbF6ReglJrHLbJeL1JbE4hWh53ikIrNdMlJbEodXhD5gkZrM02WbyY+g8jeKlobh56GFIlWZtXYFJ7UoTKP4Ezp1madp5KS2HIoWOheZbTI5qQt+yZGbzEg9JVDkCX35/Dnj8g9au5x4U7zjfOyy7tR/njpboatUkshXHN7VqIsUVXOHLO+y/pSlLkpoyayXGk1idZGhaeyQ9V32karUxQhdmsz2E6c0qYsQulSZS5Q6e6FLl3lear33h31uc03p5UfWQiPzorYSWrFY6vYUsdQLG8hWaGReyPPsQUIrZgUtbrpIffZIP7/NoGm5WQqNzPVpl9CK+lbra32lVr/1I/Zbmp3QyOwmiIRWuLVebCU5bz36pNF1sWb90/XTj6+vGKA0K6GRuZ0hElrRrte0tWR2kfr5r500immv4T9mIzQy+8kioRU+va3UFzdWf2OB6lQe8nTWHrIQGpmVyjXhWCShFY7NF5pNxT1t3nniO+bWt8/OQs8XN04vtA3xkLzQyNyPJhJa4TuaxNafZNjwHadrv6SFRuau6V/sL6EVi6VpPSUrNDIPI5qEVgwz+vCjJik0Mg8rhoRWDDvLMKMnJzQyDyPC8qgSWrFcHvtzUkL3KHPseYlifRJaEcViHBeRjNDI7JjRnptJaEXPww42XBJCI/Ng+XcaWEIrnBqP3Ch6oZF5ZEMOppfQioPHaC9RC43McXkjoRVxrWpxNUGEfubx1b/rX1zG6tPTZzYnv6RntWaxpMu/mVsciScXAhJa4dJ2jDarQg+wio0T7X64WzK/ef1S40qQuRHRIA0ktGKQwTsOGkToU8ePOZ222gsyi0L8IaEVsa00iNDatF4P6x2LdF8VqudkrqITX7mEVsS0smBCa9N6x6L//PmVhbfh0umtULnq1a4utrbfNb7vh1w3LnV+BCS0cuLXu/9eQYXW8iWv3r3o/3//vVFIZIXKVd8UAtjUhvqwBK7euBN2wprZggtds5bGKp0EW9s7je1o4Eagr1a7ex9MfpNAX+N1GScpoXcffthlr/QdkMD7+1IPOLzz0EkJffzYEeeN0TAsgRNHvxp2worZEhM6DmgVLCmOgEBSQovXmc1TuhAREVBOnn3qsShWlJTQ+rJ2+cI5czySL29RZHDkRSgXysnIy5hNn5TQWrWkfu3SC2bYE0EzEU0EdDJfufCcUU6a2oaqT05ogRHAK+fPmb+88lPz2s9eMLonzgXjIOb/+N0v9tn/yJzZ/KZSEk0kKbSlJ7EFVKc18djkq1YIDmJucxDbNWmhY4PJesYngNDj54AV9EgAoXuEyVDjE2gt9PhLZgUQqCaA0NVsqEmQAEInmDSWXE0AoavZUJMgAYROMGksuZoAQlezKb0myf0jdJJpY9FVBBC6igzlSRJA6CTTxqKrCCB0FRnKkySA0EmmjUVXEUDoKjJ15dRFSwCho00NC/MhgNA+1OgTLQGEjjY1LMyHAEL7UKNPtAQQOtrUsDAfAn0L7bMG+kCgNwII3RtKBoqBAELHkAXW0BsBhO4NJQPFQOBzAAAA//8RZ9ruAAAABklEQVQDAOdIRCAsOGReAAAAAElFTkSuQmCC">
+<meta name="format-detection" content="telephone=no, address=no, date=no">
+<link rel="canonical" href="https://www.internagroupp.com/">
+<meta name="google-site-verification" content="M4xryK_ZFVXZJErfBcPSKMdV4K73PSE2CqO_sVbf3IM">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Interna Group">
+<meta property="og:url" content="https://www.internagroupp.com/">
+<meta property="og:title" content="Interna Group — Export supply from Europe to Southeast Asia">
+<meta property="og:description" content="Export supply of industrial goods and chemicals to Southeast Asia by air and sea. Экспортные поставки промышленных товаров и химии в Юго-Восточную Азию.">
+<meta property="og:image" content="https://www.internagroupp.com/aluminium-ingots-warehouse.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="960">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B3C5D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&amp;family=Onest:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+html{scroll-behavior:smooth}
+a{color:#0B3C5D}a:hover{color:#0E7F78}
+a[href^="tel"],a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}
+a:focus-visible,button:focus-visible{outline:3px solid #1CB5AC;outline-offset:2px}
+.lb{min-width:44px;min-height:40px;padding:0 12px;border:0;border-radius:8px;font:inherit;font-weight:600;font-size:14px;cursor:pointer;background:transparent;color:#0B3C5D}
+.lb[aria-pressed="true"]{background:#0B3C5D;color:#fff}
+@media (max-width:600px){h1{font-size:2.2rem!important}h2{font-size:1.8rem!important}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.gal-dlg::backdrop{background:rgba(11,60,93,.75)}
+</style>
+<meta name="robots" content="noindex, nofollow"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Unbounded:wght@500;600&amp;display=swap" rel="stylesheet"><style id="modern">
+:root{--ink:#0A3D62;--tide:#17C3B2;--slate:#3B6381;--fog:#F3F6F8;--rule:#D9E2E7}
+body{font-family:'Manrope',system-ui,sans-serif!important;color:#1F3346;-webkit-font-smoothing:antialiased}
+body *{font-family:inherit}
+h1,h2{font-family:'Unbounded','Manrope',sans-serif!important;font-weight:600!important;letter-spacing:-0.015em!important}
+h1{font-size:clamp(2rem,4.4vw,3.5rem)!important;line-height:1.08!important;max-width:19ch}
+h2{font-size:clamp(1.55rem,2.6vw,2.25rem)!important;line-height:1.15!important}
+h3{font-weight:700!important}
+.eyebrow{text-transform:none!important;letter-spacing:0!important;font-size:1rem!important;font-weight:600!important;margin-bottom:12px!important}
+.hero .eyebrow{color:var(--tide)!important}
+/* header */
+header.site-hdr{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93)!important;-webkit-backdrop-filter:saturate(1.5) blur(10px);backdrop-filter:saturate(1.5) blur(10px)}
+header.site-hdr>div{padding-top:12px!important;padding-bottom:12px!important}
+.site-nav a{font-weight:600}
+.site-nav a[href$="contact"]{border-radius:999px!important}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--rule);border-radius:10px;background:#fff;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
+.burger span{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;transition:transform .2s,opacity .2s}
+header.open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+header.open .burger span:nth-child(2){opacity:0}
+header.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media (max-width:820px){
+ .burger{display:inline-flex}
+ header.site-hdr>div{flex-wrap:wrap!important}
+ .site-nav{display:none!important;width:100%;flex-direction:column;align-items:stretch!important;gap:4px!important;padding:8px 0 4px}
+ header.open .site-nav{display:flex!important}
+ .site-nav a{padding:12px 4px!important;border-bottom:1px solid var(--rule)}
+ .site-nav a[href$="contact"]{text-align:center;border-bottom:0;margin-top:8px}
+ .site-nav [role="group"]{align-self:flex-start;margin-top:8px}
+}
+/* hero */
+.hero{background:linear-gradient(160deg,#0A3D62 0%,#0B4B70 55%,#0F5E78 100%)!important}
+.hero a[href$="products"],.hero a[href$="process"]{border-radius:999px!important}
+.route{margin:56px 0 0;max-width:640px}
+.route svg{display:block;width:100%;height:auto;overflow:visible}
+.route .rl{fill:#BFD6E2;font-size:13px;font-weight:600;font-family:'Manrope',sans-serif}
+.route figcaption{display:flex;justify-content:space-between;margin-top:6px;color:#FFFFFF;font-weight:700;font-size:.95rem}
+.route .rm{transform-origin:0 0;animation:draw 2.2s cubic-bezier(.4,0,.2,1) .3s both}
+.route .dest{animation:arrive .5s ease-out 2.3s both}
+@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes arrive{from{opacity:0;transform:scale(.2);transform-origin:616px 104px}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.route .rm,.route .dest{animation:none}}
+/* process timeline */
+.timeline{position:relative}
+.timeline::before{content:"";position:absolute;left:0;right:0;top:1.35rem;height:2px;background:linear-gradient(90deg,var(--tide),var(--rule))}
+.timeline>div>div:first-child{position:relative;display:inline-block;background:#fff;padding-right:14px;font-family:'Unbounded',sans-serif!important;font-weight:600!important;font-size:2.2rem!important}
+@media (max-width:820px){.timeline::before{display:none}}
+/* products & gallery */
+.prod-grid>div{border-radius:6px!important;border-color:var(--rule)!important}
+.prod-grid>div img,.prod-grid>div svg{height:180px!important}
+figure[style*="border-radius: 16px"]{border-radius:6px!important}
+button[onclick*="showModal"]{border-radius:999px!important}
+/* contact */
+.contact>div{border-radius:8px!important}
+.contact .c-mail{border-radius:999px!important}
+.contact .c-tel,.contact .c-addr,.contact .c-id,.contact .c-doc{text-align:left!important;padding-left:34px!important;background-repeat:no-repeat;background-size:20px;background-position:0 2px}
+.contact .c-tel{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'%2317C3B2'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Cpath%20d%3D'M5%204h4l2%205-2.5%201.5a11%2011%200%200%200%205%205L15%2013l5%202v4a2%202%200%200%201-2%202A16%2016%200%200%201%203%206a2%202%200%200%201%202-2'%2F%3E%3C%2Fsvg%3E")}
+.contact .c-addr{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'%2317C3B2'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Cpath%20d%3D'M12%2021s-7-6.2-7-11a7%207%200%200%201%2014%200c0%204.8-7%2011-7%2011z'%2F%3E%3Ccircle%20cx%3D'12'%20cy%3D'10'%20r%3D'2.5'%2F%3E%3C%2Fsvg%3E")}
+.contact .c-id{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'%2317C3B2'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Crect%20x%3D'3'%20y%3D'5'%20width%3D'18'%20height%3D'14'%20rx%3D'2'%2F%3E%3Cpath%20d%3D'M7%2010h6M7%2014h10'%2F%3E%3C%2Fsvg%3E")}
+.contact .c-doc{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'%2317C3B2'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Cpath%20d%3D'M7%203h7l5%205v13H7z'%2F%3E%3Cpath%20d%3D'M14%203v5h5M10%2013h6M10%2017h6'%2F%3E%3C%2Fsvg%3E")}
+.contact .c-mail::before{content:"";display:inline-block;width:18px;height:18px;margin-right:8px;vertical-align:-3px;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20stroke%3D'%23FFFFFF'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%3E%3Crect%20x%3D'3'%20y%3D'5'%20width%3D'18'%20height%3D'14'%20rx%3D'2'%2F%3E%3Cpath%20d%3D'M3%207l9%206%209-6'%2F%3E%3C%2Fsvg%3E") no-repeat center/contain}
+footer{font-size:.9rem}
+</style></head>
+<body>
+<div style="font-family: Onest, 'Segoe UI', system-ui, sans-serif; color: #12263A; background: #F6F9FA; font-size: 17px; line-height: 1.6">
+<div data-lang="en">
+<div lang="en">
+<header style="background: #FFFFFF; border-bottom: 1px solid #DCE6EA" class="site-hdr">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #0B3C5D">
+<svg width="40" height="40" viewBox="0 0 1024 1024" aria-hidden="true"><g stroke-linejoin="round"><polygon points="939,84 259.2,84 939,763.8" fill="#17C3B2" stroke="#17C3B2" stroke-width="88"></polygon><polygon points="84,878.8 449.3,511.5 84,144.2" fill="#0A3D62" stroke="#0A3D62" stroke-width="88"></polygon><polygon points="211.6,943 886.4,943 550,604.6" fill="#3B6381" stroke="#3B6381" stroke-width="80"></polygon></g></svg>
+<span style="font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 0.02em">INTERNA GROUP</span>
+</a>
+<button type="button" class="burger" aria-expanded="false" aria-controls="nav-en" aria-label="Menu"><span></span><span></span><span></span></button><nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-weight: 500" class="site-nav" id="nav-en">
+<a href="#about" style="text-decoration: none">About us</a>
+<a href="#process" style="text-decoration: none">How we work</a>
+<a href="#products" style="text-decoration: none">Products</a>
+<a href="#gallery" style="text-decoration: none">Gallery</a>
+<a href="#contact" style="text-decoration: none; background: #0B3C5D; color: #FFFFFF; padding: 12px 22px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Contacts</a>
+<div role="group" aria-label="Language" style="display: flex; gap: 4px; background: #EEF3F5; padding: 4px; border-radius: 12px">
+<button type="button" class="lb" data-set="en">EN</button>
+<button type="button" class="lb" data-set="ru">RU</button>
+<button type="button" class="lb" data-set="vi">VI</button>
+</div>
+</nav>
+</div>
+</header>
+
+<section id="top" style="background: #0B3C5D; color: #FFFFFF; position: relative; overflow: hidden" class="hero">
+<div aria-hidden="true" style="position: absolute; inset: 0; opacity: 0.12; pointer-events: none; z-index: 0; display: flex"><svg width="50%" height="100%" viewBox="0 0 680 400" preserveAspectRatio="xMidYMax slice" style="display: block; flex: 1 1 50%"><circle cx="600" cy="64" r="28" fill="#F6D58E"></circle><ellipse cx="160" cy="56" rx="54" ry="12" fill="#FFFFFF"></ellipse><ellipse cx="192" cy="46" rx="32" ry="12" fill="#FFFFFF"></ellipse><ellipse cx="430" cy="74" rx="44" ry="10" fill="#FFFFFF"></ellipse><path d="M20 196 L20 150 Q90 104 160 150 L160 196 Z" fill="#B7D3DE"></path><rect x="160" y="166" width="230" height="30" fill="#B7D3DE"></rect><rect x="566" y="96" width="22" height="100" fill="#B7D3DE"></rect><polygon points="552,90 602,90 594,72 560,72" fill="#7FB8D6"></polygon><rect x="574" y="56" width="6" height="16" fill="#B7D3DE"></rect><rect x="0" y="196" width="680" height="204" fill="#7FB8D6"></rect><rect x="0" y="196" width="680" height="3" fill="#EF9F27"></rect><g fill="#F2B54A"><rect x="20" y="372" width="54" height="5"></rect><rect x="134" y="372" width="54" height="5"></rect><rect x="248" y="372" width="54" height="5"></rect><rect x="362" y="372" width="54" height="5"></rect><rect x="476" y="372" width="54" height="5"></rect><rect x="590" y="372" width="54" height="5"></rect></g><polygon points="154,214 112,128 140,128 206,214" fill="#FFFFFF"></polygon><polygon points="112,128 140,128 154,158 126,158" fill="#1CB5AC"></polygon><polygon points="140,240 96,246 98,258 156,254" fill="#FFFFFF"></polygon><path d="M150 210 L520 210 Q588 210 608 236 Q588 262 520 262 L178 262 Q144 262 132 242 L132 230 Q138 210 150 210 Z" fill="#FFFFFF"></path><path d="M520 198 Q562 198 580 216 L520 216 Z" fill="#FFFFFF"></path><rect x="148" y="240" width="384" height="7" fill="#1CB5AC"></rect><polygon points="284,248 402,248 316,284 272,284" fill="#FFFFFF"></polygon><g fill="#FFFFFF"><rect x="284" y="268" width="50" height="20" rx="10"></rect><rect x="338" y="262" width="50" height="20" rx="10"></rect><circle cx="292" cy="312" r="10"></circle><circle cx="312" cy="312" r="10"></circle><circle cx="352" cy="312" r="10"></circle><circle cx="372" cy="312" r="10"></circle><circle cx="540" cy="312" r="9"></circle></g><g stroke="#FFFFFF" stroke-width="5"><line x1="300" y1="262" x2="300" y2="306"></line><line x1="360" y1="262" x2="360" y2="306"></line><line x1="540" y1="258" x2="540" y2="306"></line></g><g fill="#FFFFFF"><rect x="40" y="300" width="58" height="16"></rect><rect x="48" y="282" width="28" height="18"></rect><rect x="112" y="306" width="108" height="10"></rect></g><polygon points="116,306 138,306 138,286 127,280 116,286" fill="#1CB5AC"></polygon><polygon points="142,306 162,306 162,288 152,282 142,288" fill="#D85A30"></polygon><polygon points="170,306 192,306 192,286 181,280 170,286" fill="#EF9F27"></polygon><polygon points="196,306 216,306 216,288 206,282 196,288" fill="#1CB5AC"></polygon><rect x="566" y="290" width="98" height="28" rx="10" fill="#D85A30"></rect></svg><svg width="50%" height="100%" viewBox="0 0 680 400" preserveAspectRatio="xMidYMax slice" style="display: block; flex: 1 1 50%"><circle cx="560" cy="80" r="34" fill="#F6D58E"></circle><ellipse cx="140" cy="70" rx="60" ry="14" fill="#FFFFFF"></ellipse><ellipse cx="175" cy="60" rx="38" ry="14" fill="#FFFFFF"></ellipse><ellipse cx="420" cy="105" rx="50" ry="11" fill="#FFFFFF"></ellipse><path d="M0 205 L60 180 L120 195 L190 170 L260 192 L330 176 L400 196 L470 182 L540 198 L610 178 L680 192 L680 230 L0 230 Z" fill="#B7D3DE"></path><rect x="0" y="300" width="680" height="100" fill="#2E6F96"></rect><rect x="360" y="200" width="320" height="38" fill="#B7D3DE"></rect><rect x="470" y="160" width="40" height="18" fill="#1CB5AC"></rect><rect x="512" y="160" width="40" height="18" fill="#FFFFFF"></rect><rect x="554" y="160" width="40" height="18" fill="#D85A30"></rect><rect x="596" y="160" width="40" height="18" fill="#1CB5AC"></rect><rect x="470" y="180" width="40" height="18" fill="#7FB8D6"></rect><rect x="512" y="180" width="40" height="18" fill="#EF9F27"></rect><rect x="554" y="180" width="40" height="18" fill="#7FB8D6"></rect><rect x="596" y="180" width="40" height="18" fill="#FFFFFF"></rect><rect x="491" y="140" width="40" height="18" fill="#EF9F27"></rect><rect x="533" y="140" width="40" height="18" fill="#1CB5AC"></rect><rect x="575" y="140" width="40" height="18" fill="#7FB8D6"></rect><g fill="#EF9F27"><rect x="380" y="70" width="8" height="130"></rect><rect x="430" y="70" width="8" height="130"></rect><rect x="290" y="62" width="200" height="10"></rect><rect x="372" y="40" width="74" height="22"></rect><polygon points="380,72 430,72 405,98"></polygon><rect x="236" y="96" width="7" height="104"></rect><rect x="276" y="96" width="7" height="104"></rect><rect x="200" y="88" width="120" height="8"></rect><rect x="230" y="70" width="44" height="18"></rect></g><g fill="#1CB5AC"><rect x="40" y="200" width="300" height="44"></rect><polygon points="340,200 372,200 340,244"></polygon><polygon points="40,200 20,200 40,244"></polygon></g><rect x="56" y="152" width="44" height="48" fill="#FFFFFF"></rect><rect x="72" y="134" width="12" height="18" fill="#FFFFFF"></rect><rect x="110" y="182" width="36" height="18" fill="#D85A30"></rect><rect x="148" y="182" width="36" height="18" fill="#FFFFFF"></rect><rect x="186" y="182" width="36" height="18" fill="#EF9F27"></rect><rect x="224" y="182" width="36" height="18" fill="#7FB8D6"></rect><rect x="262" y="182" width="36" height="18" fill="#1CB5AC"></rect><rect x="300" y="182" width="30" height="18" fill="#D85A30"></rect><rect x="110" y="164" width="36" height="18" fill="#7FB8D6"></rect><rect x="148" y="164" width="36" height="18" fill="#EF9F27"></rect><rect x="186" y="164" width="36" height="18" fill="#FFFFFF"></rect><rect x="224" y="164" width="36" height="18" fill="#D85A30"></rect><rect x="262" y="164" width="36" height="18" fill="#FFFFFF"></rect><rect x="129" y="146" width="36" height="18" fill="#1CB5AC"></rect><rect x="167" y="146" width="36" height="18" fill="#D85A30"></rect><rect x="205" y="146" width="36" height="18" fill="#7FB8D6"></rect></svg></div>
+<div style="position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 96px 24px 104px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 999 1 520px; min-width: 0">
+<p style="margin: 0 0 16px; color: #7FE0D8; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px" class="eyebrow">Export supply</p>
+<h1 style="margin: 0 0 24px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 3.2rem; line-height: 1.12">Reliable export supply of industrial goods from Europe to Southeast Asia — by air and sea.</h1>
+<p style="margin: 0 0 36px; font-size: 1.2rem; color: #D5E4EC; max-width: 600px">Full cycle of a foreign trade transaction: procurement from the manufacturer, contracting, export clearance and international logistics.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#products" style="text-decoration: none; background: #1CB5AC; color: #062A33; font-weight: 600; padding: 14px 28px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Products</a>
+<a href="#process" style="text-decoration: none; border: 2px solid #5C8DAD; color: #FFFFFF; font-weight: 600; padding: 12px 26px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">How we work</a>
+</div>
+<figure class="route" aria-label="Europe → Southeast Asia"><svg viewBox="0 0 640 132" role="img" aria-hidden="true"><defs><mask id="rm-en"><rect class="rm" x="0" y="0" width="640" height="132" fill="#fff"></rect></mask></defs><g mask="url(#rm-en)"><path d="M24 104 Q320 -8 616 104" fill="none" stroke="#17C3B2" stroke-width="2.5" stroke-dasharray="7 7"></path><path d="M24 104 C190 138 450 138 616 104" fill="none" stroke="#8FB3C9" stroke-width="2.5"></path></g><circle cx="24" cy="104" r="6" fill="#FFFFFF"></circle><circle class="dest" cx="616" cy="104" r="6" fill="#17C3B2"></circle><text x="320" y="36" text-anchor="middle" class="rl">Air freight</text><text x="320" y="130" text-anchor="middle" class="rl">Sea freight</text></svg><figcaption><span>Europe</span><span>Southeast Asia</span></figcaption></figure></div>
+</div>
+</section>
+
+<section id="about" style="padding: 96px 24px">
+<div style="max-width: 1200px; margin: 0 auto">
+<p style="margin: 0 0 8px; color: #0E7F78; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px" class="eyebrow">About us</p>
+<h2 style="margin: 0 0 16px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.3rem; color: #0B3C5D; line-height: 1.2">Interna Group LLC</h2>
+<p style="margin: 0 0 32px; max-width: 820px; color: #3D5568; font-size: 1.05rem; line-height: 1.7">An export company based in Ufa, operating since 2021. We supply industrial goods and chemical products to Southeast Asia by air and sea, and have experience shipping dangerous goods in accordance with IATA DGR.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="padding: 14px 20px; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 12px; color: #0B3C5D; font-weight: 600">Since 2021</div>
+<div style="padding: 14px 20px; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 12px; color: #0B3C5D; font-weight: 600">Air and sea freight</div>
+<div style="padding: 14px 20px; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 12px; color: #0B3C5D; font-weight: 600">Dangerous goods (IATA DGR)</div>
+</div>
+</div>
+</section>
+
+<section id="process" style="padding: 96px 24px; background: #FFFFFF; border-top: 1px solid #DCE6EA; border-bottom: 1px solid #DCE6EA">
+<div style="max-width: 1200px; margin: 0 auto">
+<p style="margin: 0 0 8px; color: #0E7F78; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px" class="eyebrow">Export support</p>
+<h2 style="margin: 0 0 16px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.3rem; color: #0B3C5D; line-height: 1.2">Full cycle of a foreign trade transaction</h2>
+<p style="margin: 0 0 48px; max-width: 760px; color: #3D5568; font-size: 1.05rem; line-height: 1.6">From supplier qualification to cargo release in the country of destination.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px" class="timeline">
+<div style="display: flex; flex-direction: column">
+<div style="font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.6rem; color: #1CB5AC; line-height: 1">01</div>
+<h3 style="margin: 12px 0 8px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Procurement and supplier qualification</h3>
+<p style="margin: 0 0 12px; color: #3D5568; line-height: 1.6">Selecting the manufacturer to the buyer’s specification, verifying compliance with GOST / EN / ASTM, incoming inspection, checking certificates and quality passports.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #DCE6EA; color: #4A6478; font-size: 0.9rem; line-height: 1.5"><strong style="color: #0E7F78">Documents:</strong> specification, quality certificate (incl. 3.1 under EN 10204).</p>
+</div>
+<div style="display: flex; flex-direction: column">
+<div style="font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.6rem; color: #1CB5AC; line-height: 1">02</div>
+<h3 style="margin: 12px 0 8px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Contracting and currency control</h3>
+<p style="margin: 0 0 12px; color: #3D5568; line-height: 1.6">Foreign trade contract on Incoterms 2020 terms (FCA, CPT/CIP, DAP), registration of the contract with the authorised bank and currency control support.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #DCE6EA; color: #4A6478; font-size: 0.9rem; line-height: 1.5"><strong style="color: #0E7F78">Documents:</strong> contract, specifications, proforma invoice, unique contract number (UCN).</p>
+</div>
+<div style="display: flex; flex-direction: column">
+<div style="font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.6rem; color: #1CB5AC; line-height: 1">03</div>
+<h3 style="margin: 12px 0 8px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Customs clearance and origin</h3>
+<p style="margin: 0 0 12px; color: #3D5568; line-height: 1.6">HS classification under the EAEU Commodity Nomenclature, export declaration, EAV certificate of origin via the Chamber of Commerce, ISPM 15 fumigation of wooden packaging. Preparation of dangerous goods (classes 3, 8, etc.) under IATA DGR and the IMDG Code.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #DCE6EA; color: #4A6478; font-size: 0.9rem; line-height: 1.5"><strong style="color: #0E7F78">Documents:</strong> export declaration, invoice, packing list, EAV certificate, DGD, SDS.</p>
+</div>
+<div style="display: flex; flex-direction: column">
+<div style="font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.6rem; color: #1CB5AC; line-height: 1">04</div>
+<h3 style="margin: 12px 0 8px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Logistics</h3>
+<p style="margin: 0 0 12px; color: #3D5568; line-height: 1.6">Air shipments, including dangerous goods, and sea container freight FCL/LCL. Cargo securing and tracking until release to the consignee; cargo insurance through our partner broker.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #DCE6EA; color: #4A6478; font-size: 0.9rem; line-height: 1.5"><strong style="color: #0E7F78">Documents:</strong> AWB/HAWB, bill of lading (B/L), insurance policy.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="products" style="padding: 96px 24px">
+<div style="max-width: 1200px; margin: 0 auto">
+<p style="margin: 0 0 8px; color: #0E7F78; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px" class="eyebrow">Products</p>
+<h2 style="margin: 0 0 16px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.3rem; color: #0B3C5D; line-height: 1.2">Industrial goods and equipment</h2>
+<p style="margin: 0 0 40px; max-width: 820px; color: #3D5568; font-size: 1.05rem; line-height: 1.6">We supply a wide range of industrial products: from rolled metal to complex engineering equipment. Selection is based on the customer’s technical specification or questionnaire.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px" class="prod-grid">
+<div style="background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden">
+<img src="aluminium-ingots-1.jpg" alt="Aluminium &amp; alloys" loading="lazy" style="display: block; width: 100%; height: 200px; object-fit: cover">
+<div style="padding: 24px"><h3 style="margin: 0 0 6px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Aluminium &amp; alloys</h3><p style="margin: 0; color: #3D5568">Secondary aluminium ingots, aluminium mill products — sheets, plates, pipes and round bars — and semi-finished products from trusted producers.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden">
+<img src="copper-strips.jpg" alt="Rolled metal products" loading="lazy" style="display: block; width: 100%; height: 200px; object-fit: cover">
+<div style="padding: 24px"><h3 style="margin: 0 0 6px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Rolled metal products</h3><p style="margin: 0; color: #3D5568">Steel plates, wire rod and wire, copper and brass strips — cut to size and packed for long-distance transport.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden">
+<img src="valves.jpg" alt="Pipeline valves" loading="lazy" style="display: block; width: 100%; height: 200px; object-fit: cover">
+<div style="padding: 24px"><h3 style="margin: 0 0 6px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Pipeline valves</h3><p style="margin: 0; color: #3D5568">Globe valves, gate valves and fittings for industrial pipelines, supplied with certificates and passports.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden">
+<img src="sealant-cans.jpg" alt="Industrial chemicals" loading="lazy" style="display: block; width: 100%; height: 200px; object-fit: cover">
+<div style="padding: 24px"><h3 style="margin: 0 0 6px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Industrial chemicals</h3><p style="margin: 0; color: #3D5568">Sealants, technical lubricants and organic resin (pine pitch) for industrial and construction use. Supplied with safety data sheets (SDS/MSDS).</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden">
+<svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Electrical products and equipment" style="display: block; width: 100%; height: 200px; background: #EAF3F6"><rect x="0" y="160" width="400" height="40" fill="#D5E4EC"></rect><g><rect x="30" y="58" width="104" height="102" rx="8" fill="#0B3C5D"></rect><rect x="42" y="70" width="80" height="34" rx="4" fill="#7FE0D8"></rect><polyline points="46,96 58,84 70,90 82,76 94,86 106,78 118,82" fill="none" stroke="#0B3C5D" stroke-width="2.5"></polyline><circle cx="56" cy="128" r="8" fill="#1CB5AC"></circle><circle cx="82" cy="128" r="8" fill="#EF9F27"></circle><rect x="100" y="120" width="22" height="16" rx="3" fill="#2E6F96"></rect><rect x="74" y="160" width="16" height="0" fill="none"></rect></g><g><rect x="160" y="74" width="96" height="86" rx="6" fill="#2E6F96"></rect><rect x="160" y="74" width="96" height="14" rx="6" fill="#0B3C5D"></rect><g fill="#7FE0D8"><circle cx="174" cy="104" r="4"></circle><circle cx="188" cy="104" r="4"></circle><circle cx="202" cy="104" r="4"></circle></g><g fill="#FFFFFF"><rect x="170" y="118" width="12" height="30" rx="2"></rect><rect x="188" y="118" width="12" height="30" rx="2"></rect><rect x="206" y="118" width="12" height="30" rx="2"></rect><rect x="224" y="118" width="12" height="30" rx="2"></rect></g><g fill="#EF9F27"><circle cx="236" cy="104" r="4"></circle></g></g><g><rect x="280" y="112" width="52" height="48" rx="6" fill="#0B3C5D"></rect><circle cx="330" cy="100" r="40" fill="#1CB5AC"></circle><circle cx="330" cy="100" r="28" fill="#0E7F78"></circle><circle cx="330" cy="100" r="10" fill="#EAF3F6"></circle><g stroke="#7FE0D8" stroke-width="3"><line x1="330" y1="62" x2="330" y2="72"></line><line x1="368" y1="100" x2="358" y2="100"></line><line x1="330" y1="138" x2="330" y2="128"></line><line x1="292" y1="100" x2="302" y2="100"></line><line x1="357" y1="73" x2="350" y2="80"></line><line x1="303" y1="127" x2="310" y2="120"></line><line x1="357" y1="127" x2="350" y2="120"></line><line x1="303" y1="73" x2="310" y2="80"></line></g><rect x="370" y="94" width="26" height="12" rx="3" fill="#5B6B78"></rect></g></svg>
+<div style="padding: 24px"><h3 style="margin: 0 0 6px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Electrical products and equipment</h3><p style="margin: 0; color: #3D5568">Electrical products, industrial controllers and other engineering equipment. Selected and supplied to the customer’s specification, including according to questionnaires.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="gallery" style="padding: 96px 24px; background: #F4F8FA">
+<div style="max-width: 1200px; margin: 0 auto">
+<p style="margin: 0 0 8px; color: #0E7F78; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px" class="eyebrow">Gallery</p>
+<h2 style="margin: 0 0 48px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.3rem; color: #0B3C5D; line-height: 1.2">Our shipments</h2>
+<p style="margin: -32px 0 28px; color: #3D5568; font-size: 1.05rem">Photos of shipments, packaging and products.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 28px"><img src="aluminium-ingots-warehouse.jpg" alt="Secondary aluminium ingots at the warehouse" loading="lazy" onclick="document.getElementById('gal-dlg-en').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"><img src="aluminium-ingots-2.jpg" alt="Aluminium ingots strapped for shipment" loading="lazy" onclick="document.getElementById('gal-dlg-en').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"><img src="aluminium-pipes-amg6m.jpg" alt="Aluminium mill products — pipes" loading="lazy" onclick="document.getElementById('gal-dlg-en').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"></div>
+<button type="button" onclick="document.getElementById('gal-dlg-en').showModal()" style="padding: 14px 28px; background: #0B3C5D; color: #FFFFFF; border: 0; border-radius: 10px; font-size: 1rem; font-weight: 600; cursor: pointer">View gallery (18 photos)</button>
+<dialog id="gal-dlg-en" class="gal-dlg" onclick="if(event.target===this)this.close()" style="width: min(1200px, 94vw); max-height: 90vh; padding: 0; border: 0; border-radius: 16px; background: #F4F8FA">
+<div style="position: sticky; top: 0; z-index: 2; display: flex; justify-content: flex-end; padding: 12px 16px; background: #F4F8FA; border-bottom: 1px solid #DCE6EA"><button type="button" onclick="this.closest('dialog').close()" style="padding: 8px 18px; background: #FFFFFF; color: #0B3C5D; border: 1px solid #DCE6EA; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer">✕ Close</button></div>
+<div style="padding: 24px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-warehouse.jpg" alt="Secondary aluminium ingots at the warehouse" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Secondary aluminium ingots at the warehouse</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-2.jpg" alt="Aluminium ingots strapped for shipment" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Aluminium ingots strapped for shipment</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-pipes-amg6m.jpg" alt="Aluminium mill products — pipes" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Aluminium mill products — pipes</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="wire-rod-mechel.jpg" alt="Spring wire in coils" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Spring wire in coils</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="steel-plates-inspection.jpg" alt="Inspecting steel plates on arrival" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Inspecting steel plates on arrival</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="steel-plates-port.jpg" alt="Steel plates at the container terminal" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Steel plates at the container terminal</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="wooden-crate-packing.jpg" alt="Export packing in a wooden crate" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Export packing in a wooden crate</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-al2-ingots.jpg" alt="AL2 aluminium casting alloy ingots" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">AL2 aluminium casting alloy ingots</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-plates-amg6.jpg" alt="AMg6 aluminium plates" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">AMg6 aluminium plates</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-loading.jpg" alt="Loading aluminium ingots at the warehouse" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Loading aluminium ingots at the warehouse</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-container.jpg" alt="Aluminium ingots secured in a container" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Aluminium ingots secured in a container</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="pine-pitch.jpg" alt="Pine pitch (organic resin)" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Pine pitch (organic resin)</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="resin-export-pallet.jpg" alt="Resin consignment on a pallet at the airport" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Resin consignment on a pallet at the airport</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="chemicals-hazmat-boxes.jpg" alt="Packaging for flammable liquids (dangerous goods)" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Packaging for flammable liquids (dangerous goods)</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="chemicals-un-packaging.jpg" alt="Chemicals in UN-certified packaging" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Chemicals in UN-certified packaging</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="chemicals-overpack.jpg" alt="Dangerous goods overpack ready for air freight" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Dangerous goods overpack ready for air freight</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="crates-truck-loading.jpg" alt="Export crates loaded in a truck" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Export crates loaded in a truck</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="pallet-wrapped.jpg" alt="Pallet wrapped for transport" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Pallet wrapped for transport</figcaption></figure>
+</div>
+</div>
+</dialog>
+</div>
+</section>
+
+<section id="contact" style="padding: 0 24px 96px" class="contact">
+<div style="max-width: 1200px; margin: 0 auto; background: #0B3C5D; color: #FFFFFF; border-radius: 24px; padding: 56px 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
+<div style="flex: 999 1 420px; min-width: 0">
+<h2 style="margin: 0 0 12px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.2rem; line-height: 1.2">Contacts</h2>
+<p style="margin: 0; color: #D5E4EC; font-size: 1.1rem">For questions about supplies, documents and cooperation, please contact us by email or phone below.</p>
+</div>
+<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 10px">
+<a href="mailto:info@internagroupp.com" style="text-decoration: none; background: #1CB5AC; color: #062A33; font-weight: 600; padding: 14px 24px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center" class="c-mail">info@internagroupp.com</a>
+<p style="margin: 0; text-align: center; color: #D5E4EC" class="c-tel"><a href="tel:+79177759226" style="color: inherit; text-decoration: none">+7 (917) 775-92-26</a><br><a href="tel:+73472461068" style="color: inherit; text-decoration: none">+7 (347) 246-10-68</a></p>
+<p style="margin: 8px 0 0; text-align: center; color: #D5E4EC; font-size: 0.9rem; line-height: 1.5" class="c-addr"><strong>Legal address:</strong><br>13 Oblepikhovaya Street, Nagaevo<br>Ufa, Republic of Bashkortostan 450900<br>Russia</p>
+<p style="margin: 8px 0 0; text-align: center; color: #D5E4EC; font-size: 0.9rem; line-height: 1.5" class="c-addr"><strong>Mailing address:</strong><br>Office 209, 1/1 Komsomolskaya Street<br>Ufa, Republic of Bashkortostan 450001<br>Russia</p>
+<p style="margin: 8px 0 0; text-align: center; color: #D5E4EC; font-size: 0.9rem; line-height: 1.5" class="c-id"><strong>Tax ID (INN):</strong> 0276963506<br><strong>Registration No. (OGRN):</strong> 1210200037508</p>
+</div>
+</div>
+</section>
+
+<footer style="background: #FFFFFF; border-top: 1px solid #DCE6EA">
+<div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: #4A6478; font-size: 15px">
+<span>© 2026 Interna Group LLC</span>
+</div>
+</footer>
+</div>
+</div>
+<div data-lang="vi" hidden="">
+<div lang="vi">
+<header style="background: #FFFFFF; border-bottom: 1px solid #DCE6EA" class="site-hdr">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#vi-top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #0B3C5D">
+<svg width="40" height="40" viewBox="0 0 1024 1024" aria-hidden="true"><g stroke-linejoin="round"><polygon points="939,84 259.2,84 939,763.8" fill="#17C3B2" stroke="#17C3B2" stroke-width="88"></polygon><polygon points="84,878.8 449.3,511.5 84,144.2" fill="#0A3D62" stroke="#0A3D62" stroke-width="88"></polygon><polygon points="211.6,943 886.4,943 550,604.6" fill="#3B6381" stroke="#3B6381" stroke-width="80"></polygon></g></svg>
+<span style="font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 0.02em">INTERNA GROUP</span>
+</a>
+<button type="button" class="burger" aria-expanded="false" aria-controls="nav-vi" aria-label="Menu"><span></span><span></span><span></span></button><nav aria-label="Menu chính" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-weight: 500" class="site-nav" id="nav-vi">
+<a href="#vi-about" style="text-decoration: none">Giới thiệu</a>
+<a href="#vi-process" style="text-decoration: none">Quy trình</a>
+<a href="#vi-products" style="text-decoration: none">Sản phẩm</a>
+<a href="#vi-gallery" style="text-decoration: none">Hình ảnh</a>
+<a href="#vi-contact" style="text-decoration: none; background: #0B3C5D; color: #FFFFFF; padding: 12px 22px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Liên hệ</a>
+<div role="group" aria-label="Ngôn ngữ" style="display: flex; gap: 4px; background: #EEF3F5; padding: 4px; border-radius: 12px">
+<button type="button" class="lb" data-set="en">EN</button>
+<button type="button" class="lb" data-set="ru">RU</button>
+<button type="button" class="lb" data-set="vi">VI</button>
+</div>
+</nav>
+</div>
+</header>
+
+<section id="vi-top" style="background: #0B3C5D; color: #FFFFFF; position: relative; overflow: hidden" class="hero">
+<div aria-hidden="true" style="position: absolute; inset: 0; opacity: 0.12; pointer-events: none; z-index: 0; display: flex"><svg width="50%" height="100%" viewBox="0 0 680 400" preserveAspectRatio="xMidYMax slice" style="display: block; flex: 1 1 50%"><circle cx="600" cy="64" r="28" fill="#F6D58E"></circle><ellipse cx="160" cy="56" rx="54" ry="12" fill="#FFFFFF"></ellipse><ellipse cx="192" cy="46" rx="32" ry="12" fill="#FFFFFF"></ellipse><ellipse cx="430" cy="74" rx="44" ry="10" fill="#FFFFFF"></ellipse><path d="M20 196 L20 150 Q90 104 160 150 L160 196 Z" fill="#B7D3DE"></path><rect x="160" y="166" width="230" height="30" fill="#B7D3DE"></rect><rect x="566" y="96" width="22" height="100" fill="#B7D3DE"></rect><polygon points="552,90 602,90 594,72 560,72" fill="#7FB8D6"></polygon><rect x="574" y="56" width="6" height="16" fill="#B7D3DE"></rect><rect x="0" y="196" width="680" height="204" fill="#7FB8D6"></rect><rect x="0" y="196" width="680" height="3" fill="#EF9F27"></rect><g fill="#F2B54A"><rect x="20" y="372" width="54" height="5"></rect><rect x="134" y="372" width="54" height="5"></rect><rect x="248" y="372" width="54" height="5"></rect><rect x="362" y="372" width="54" height="5"></rect><rect x="476" y="372" width="54" height="5"></rect><rect x="590" y="372" width="54" height="5"></rect></g><polygon points="154,214 112,128 140,128 206,214" fill="#FFFFFF"></polygon><polygon points="112,128 140,128 154,158 126,158" fill="#1CB5AC"></polygon><polygon points="140,240 96,246 98,258 156,254" fill="#FFFFFF"></polygon><path d="M150 210 L520 210 Q588 210 608 236 Q588 262 520 262 L178 262 Q144 262 132 242 L132 230 Q138 210 150 210 Z" fill="#FFFFFF"></path><path d="M520 198 Q562 198 580 216 L520 216 Z" fill="#FFFFFF"></path><rect x="148" y="240" width="384" height="7" fill="#1CB5AC"></rect><polygon points="284,248 402,248 316,284 272,284" fill="#FFFFFF"></polygon><g fill="#FFFFFF"><rect x="284" y="268" width="50" height="20" rx="10"></rect><rect x="338" y="262" width="50" height="20" rx="10"></rect><circle cx="292" cy="312" r="10"></circle><circle cx="312" cy="312" r="10"></circle><circle cx="352" cy="312" r="10"></circle><circle cx="372" cy="312" r="10"></circle><circle cx="540" cy="312" r="9"></circle></g><g stroke="#FFFFFF" stroke-width="5"><line x1="300" y1="262" x2="300" y2="306"></line><line x1="360" y1="262" x2="360" y2="306"></line><line x1="540" y1="258" x2="540" y2="306"></line></g><g fill="#FFFFFF"><rect x="40" y="300" width="58" height="16"></rect><rect x="48" y="282" width="28" height="18"></rect><rect x="112" y="306" width="108" height="10"></rect></g><polygon points="116,306 138,306 138,286 127,280 116,286" fill="#1CB5AC"></polygon><polygon points="142,306 162,306 162,288 152,282 142,288" fill="#D85A30"></polygon><polygon points="170,306 192,306 192,286 181,280 170,286" fill="#EF9F27"></polygon><polygon points="196,306 216,306 216,288 206,282 196,288" fill="#1CB5AC"></polygon><rect x="566" y="290" width="98" height="28" rx="10" fill="#D85A30"></rect></svg><svg width="50%" height="100%" viewBox="0 0 680 400" preserveAspectRatio="xMidYMax slice" style="display: block; flex: 1 1 50%"><circle cx="560" cy="80" r="34" fill="#F6D58E"></circle><ellipse cx="140" cy="70" rx="60" ry="14" fill="#FFFFFF"></ellipse><ellipse cx="175" cy="60" rx="38" ry="14" fill="#FFFFFF"></ellipse><ellipse cx="420" cy="105" rx="50" ry="11" fill="#FFFFFF"></ellipse><path d="M0 205 L60 180 L120 195 L190 170 L260 192 L330 176 L400 196 L470 182 L540 198 L610 178 L680 192 L680 230 L0 230 Z" fill="#B7D3DE"></path><rect x="0" y="300" width="680" height="100" fill="#2E6F96"></rect><rect x="360" y="200" width="320" height="38" fill="#B7D3DE"></rect><rect x="470" y="160" width="40" height="18" fill="#1CB5AC"></rect><rect x="512" y="160" width="40" height="18" fill="#FFFFFF"></rect><rect x="554" y="160" width="40" height="18" fill="#D85A30"></rect><rect x="596" y="160" width="40" height="18" fill="#1CB5AC"></rect><rect x="470" y="180" width="40" height="18" fill="#7FB8D6"></rect><rect x="512" y="180" width="40" height="18" fill="#EF9F27"></rect><rect x="554" y="180" width="40" height="18" fill="#7FB8D6"></rect><rect x="596" y="180" width="40" height="18" fill="#FFFFFF"></rect><rect x="491" y="140" width="40" height="18" fill="#EF9F27"></rect><rect x="533" y="140" width="40" height="18" fill="#1CB5AC"></rect><rect x="575" y="140" width="40" height="18" fill="#7FB8D6"></rect><g fill="#EF9F27"><rect x="380" y="70" width="8" height="130"></rect><rect x="430" y="70" width="8" height="130"></rect><rect x="290" y="62" width="200" height="10"></rect><rect x="372" y="40" width="74" height="22"></rect><polygon points="380,72 430,72 405,98"></polygon><rect x="236" y="96" width="7" height="104"></rect><rect x="276" y="96" width="7" height="104"></rect><rect x="200" y="88" width="120" height="8"></rect><rect x="230" y="70" width="44" height="18"></rect></g><g fill="#1CB5AC"><rect x="40" y="200" width="300" height="44"></rect><polygon points="340,200 372,200 340,244"></polygon><polygon points="40,200 20,200 40,244"></polygon></g><rect x="56" y="152" width="44" height="48" fill="#FFFFFF"></rect><rect x="72" y="134" width="12" height="18" fill="#FFFFFF"></rect><rect x="110" y="182" width="36" height="18" fill="#D85A30"></rect><rect x="148" y="182" width="36" height="18" fill="#FFFFFF"></rect><rect x="186" y="182" width="36" height="18" fill="#EF9F27"></rect><rect x="224" y="182" width="36" height="18" fill="#7FB8D6"></rect><rect x="262" y="182" width="36" height="18" fill="#1CB5AC"></rect><rect x="300" y="182" width="30" height="18" fill="#D85A30"></rect><rect x="110" y="164" width="36" height="18" fill="#7FB8D6"></rect><rect x="148" y="164" width="36" height="18" fill="#EF9F27"></rect><rect x="186" y="164" width="36" height="18" fill="#FFFFFF"></rect><rect x="224" y="164" width="36" height="18" fill="#D85A30"></rect><rect x="262" y="164" width="36" height="18" fill="#FFFFFF"></rect><rect x="129" y="146" width="36" height="18" fill="#1CB5AC"></rect><rect x="167" y="146" width="36" height="18" fill="#D85A30"></rect><rect x="205" y="146" width="36" height="18" fill="#7FB8D6"></rect></svg></div>
+<div style="position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 96px 24px 104px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 999 1 520px; min-width: 0">
+<p style="margin: 0 0 16px; color: #7FE0D8; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px" class="eyebrow">Cung ứng xuất khẩu</p>
+<h1 style="margin: 0 0 24px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 3.2rem; line-height: 1.12">Cung ứng xuất khẩu hàng công nghiệp tin cậy từ châu Âu đến Đông Nam Á — bằng đường hàng không và đường biển.</h1>
+<p style="margin: 0 0 36px; font-size: 1.2rem; color: #D5E4EC; max-width: 600px">Trọn chu trình giao dịch ngoại thương: thu mua từ nhà sản xuất, ký kết hợp đồng, thông quan xuất khẩu và logistics quốc tế.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#vi-products" style="text-decoration: none; background: #1CB5AC; color: #062A33; font-weight: 600; padding: 14px 28px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Sản phẩm</a>
+<a href="#vi-process" style="text-decoration: none; border: 2px solid #5C8DAD; color: #FFFFFF; font-weight: 600; padding: 12px 26px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Quy trình</a>
+</div>
+<figure class="route" aria-label="Châu Âu → Đông Nam Á"><svg viewBox="0 0 640 132" role="img" aria-hidden="true"><defs><mask id="rm-vi"><rect class="rm" x="0" y="0" width="640" height="132" fill="#fff"></rect></mask></defs><g mask="url(#rm-vi)"><path d="M24 104 Q320 -8 616 104" fill="none" stroke="#17C3B2" stroke-width="2.5" stroke-dasharray="7 7"></path><path d="M24 104 C190 138 450 138 616 104" fill="none" stroke="#8FB3C9" stroke-width="2.5"></path></g><circle cx="24" cy="104" r="6" fill="#FFFFFF"></circle><circle class="dest" cx="616" cy="104" r="6" fill="#17C3B2"></circle><text x="320" y="36" text-anchor="middle" class="rl">Hàng không</text><text x="320" y="130" text-anchor="middle" class="rl">Đường biển</text></svg><figcaption><span>Châu Âu</span><span>Đông Nam Á</span></figcaption></figure></div>
+</div>
+</section>
+
+<section id="vi-about" style="padding: 96px 24px">
+<div style="max-width: 1200px; margin: 0 auto">
+<p style="margin: 0 0 8px; color: #0E7F78; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px" class="eyebrow">Giới thiệu</p>
+<h2 style="margin: 0 0 16px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.3rem; color: #0B3C5D; line-height: 1.2">Công ty TNHH Interna Group</h2>
+<p style="margin: 0 0 32px; max-width: 820px; color: #3D5568; font-size: 1.05rem; line-height: 1.7">Công ty xuất khẩu có trụ sở tại Ufa, hoạt động từ năm 2021. Chúng tôi cung cấp hàng công nghiệp và sản phẩm hóa chất đến các nước Đông Nam Á bằng đường hàng không và đường biển, có kinh nghiệm vận chuyển hàng nguy hiểm theo IATA DGR.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="padding: 14px 20px; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 12px; color: #0B3C5D; font-weight: 600">Từ năm 2021</div>
+<div style="padding: 14px 20px; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 12px; color: #0B3C5D; font-weight: 600">Hàng không và đường biển</div>
+<div style="padding: 14px 20px; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 12px; color: #0B3C5D; font-weight: 600">Hàng nguy hiểm (IATA DGR)</div>
+</div>
+</div>
+</section>
+
+<section id="vi-process" style="padding: 96px 24px; background: #FFFFFF; border-top: 1px solid #DCE6EA; border-bottom: 1px solid #DCE6EA">
+<div style="max-width: 1200px; margin: 0 auto">
+<p style="margin: 0 0 8px; color: #0E7F78; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px" class="eyebrow">Hỗ trợ xuất khẩu</p>
+<h2 style="margin: 0 0 16px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.3rem; color: #0B3C5D; line-height: 1.2">Trọn chu trình giao dịch ngoại thương</h2>
+<p style="margin: 0 0 48px; max-width: 760px; color: #3D5568; font-size: 1.05rem; line-height: 1.6">Từ thẩm định nhà cung cấp đến khi hàng được thông quan tại nước nhập khẩu.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px" class="timeline">
+<div style="display: flex; flex-direction: column">
+<div style="font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.6rem; color: #1CB5AC; line-height: 1">01</div>
+<h3 style="margin: 12px 0 8px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Thu mua và thẩm định nhà cung cấp</h3>
+<p style="margin: 0 0 12px; color: #3D5568; line-height: 1.6">Lựa chọn nhà sản xuất theo yêu cầu kỹ thuật của người mua, kiểm tra sự phù hợp với GOST / EN / ASTM, kiểm tra đầu vào, đối chiếu chứng chỉ và hộ chiếu chất lượng.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #DCE6EA; color: #4A6478; font-size: 0.9rem; line-height: 1.5"><strong style="color: #0E7F78">Chứng từ:</strong> bảng thông số kỹ thuật, chứng chỉ chất lượng (bao gồm 3.1 theo EN 10204).</p>
+</div>
+<div style="display: flex; flex-direction: column">
+<div style="font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.6rem; color: #1CB5AC; line-height: 1">02</div>
+<h3 style="margin: 12px 0 8px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Ký kết hợp đồng và kiểm soát ngoại hối</h3>
+<p style="margin: 0 0 12px; color: #3D5568; line-height: 1.6">Hợp đồng ngoại thương theo Incoterms 2020 (FCA, CPT/CIP, DAP), đăng ký hợp đồng tại ngân hàng được ủy quyền và hỗ trợ kiểm soát ngoại hối.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #DCE6EA; color: #4A6478; font-size: 0.9rem; line-height: 1.5"><strong style="color: #0E7F78">Chứng từ:</strong> hợp đồng, bảng thông số, hóa đơn chiếu lệ (proforma), mã số hợp đồng (UCN).</p>
+</div>
+<div style="display: flex; flex-direction: column">
+<div style="font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.6rem; color: #1CB5AC; line-height: 1">03</div>
+<h3 style="margin: 12px 0 8px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Thủ tục hải quan và xuất xứ</h3>
+<p style="margin: 0 0 12px; color: #3D5568; line-height: 1.6">Phân loại mã HS theo Danh mục hàng hóa EAEU, khai báo xuất khẩu, cấp giấy chứng nhận xuất xứ EAV qua Phòng Thương mại, hun trùng bao bì gỗ theo ISPM 15. Chuẩn bị hàng nguy hiểm (nhóm 3, 8…) theo IATA DGR và IMDG Code.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #DCE6EA; color: #4A6478; font-size: 0.9rem; line-height: 1.5"><strong style="color: #0E7F78">Chứng từ:</strong> tờ khai hải quan, hóa đơn, phiếu đóng gói, giấy chứng nhận EAV, DGD, SDS.</p>
+</div>
+<div style="display: flex; flex-direction: column">
+<div style="font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.6rem; color: #1CB5AC; line-height: 1">04</div>
+<h3 style="margin: 12px 0 8px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Logistics</h3>
+<p style="margin: 0 0 12px; color: #3D5568; line-height: 1.6">Vận chuyển hàng không, kể cả hàng nguy hiểm, và vận tải container đường biển FCL/LCL. Chằng buộc hàng hóa và theo dõi đến khi giao cho người nhận; bảo hiểm hàng hóa qua đối tác môi giới.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #DCE6EA; color: #4A6478; font-size: 0.9rem; line-height: 1.5"><strong style="color: #0E7F78">Chứng từ:</strong> AWB/HAWB, vận đơn đường biển (B/L), hợp đồng bảo hiểm.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="vi-products" style="padding: 96px 24px">
+<div style="max-width: 1200px; margin: 0 auto">
+<p style="margin: 0 0 8px; color: #0E7F78; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px" class="eyebrow">Sản phẩm</p>
+<h2 style="margin: 0 0 16px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.3rem; color: #0B3C5D; line-height: 1.2">Hàng công nghiệp và thiết bị</h2>
+<p style="margin: 0 0 40px; max-width: 820px; color: #3D5568; font-size: 1.05rem; line-height: 1.6">Chúng tôi cung cấp nhiều loại sản phẩm công nghiệp: từ kim loại cán đến thiết bị kỹ thuật phức tạp. Việc lựa chọn được thực hiện theo yêu cầu kỹ thuật hoặc bảng câu hỏi của khách hàng.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px" class="prod-grid">
+<div style="background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden">
+<img src="aluminium-ingots-1.jpg" alt="Nhôm và hợp kim nhôm" loading="lazy" style="display: block; width: 100%; height: 200px; object-fit: cover">
+<div style="padding: 24px"><h3 style="margin: 0 0 6px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Nhôm và hợp kim nhôm</h3><p style="margin: 0; color: #3D5568">Nhôm thỏi tái chế, sản phẩm nhôm cán — tấm, tấm dày, ống, thanh tròn — và bán thành phẩm từ các nhà sản xuất uy tín.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden">
+<img src="copper-strips.jpg" alt="Thép và kim loại cán" loading="lazy" style="display: block; width: 100%; height: 200px; object-fit: cover">
+<div style="padding: 24px"><h3 style="margin: 0 0 6px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Thép và kim loại cán</h3><p style="margin: 0; color: #3D5568">Thép tấm, thép cuộn và dây thép, dải đồng và đồng thau — cắt theo kích thước và đóng gói cho vận chuyển đường dài.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden">
+<img src="valves.jpg" alt="Van công nghiệp" loading="lazy" style="display: block; width: 100%; height: 200px; object-fit: cover">
+<div style="padding: 24px"><h3 style="margin: 0 0 6px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Van công nghiệp</h3><p style="margin: 0; color: #3D5568">Van cầu, van cổng và phụ kiện cho đường ống công nghiệp, kèm chứng chỉ và hộ chiếu kỹ thuật.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden">
+<img src="sealant-cans.jpg" alt="Hóa chất công nghiệp" loading="lazy" style="display: block; width: 100%; height: 200px; object-fit: cover">
+<div style="padding: 24px"><h3 style="margin: 0 0 6px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Hóa chất công nghiệp</h3><p style="margin: 0; color: #3D5568">Keo trám, dầu mỡ bôi trơn kỹ thuật và nhựa hữu cơ (nhựa thông) dùng trong công nghiệp và xây dựng. Cung cấp kèm phiếu an toàn hóa chất (SDS/MSDS).</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden">
+<svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Thiết bị điện và thiết bị kỹ thuật" style="display: block; width: 100%; height: 200px; background: #EAF3F6"><rect x="0" y="160" width="400" height="40" fill="#D5E4EC"></rect><g><rect x="30" y="58" width="104" height="102" rx="8" fill="#0B3C5D"></rect><rect x="42" y="70" width="80" height="34" rx="4" fill="#7FE0D8"></rect><polyline points="46,96 58,84 70,90 82,76 94,86 106,78 118,82" fill="none" stroke="#0B3C5D" stroke-width="2.5"></polyline><circle cx="56" cy="128" r="8" fill="#1CB5AC"></circle><circle cx="82" cy="128" r="8" fill="#EF9F27"></circle><rect x="100" y="120" width="22" height="16" rx="3" fill="#2E6F96"></rect><rect x="74" y="160" width="16" height="0" fill="none"></rect></g><g><rect x="160" y="74" width="96" height="86" rx="6" fill="#2E6F96"></rect><rect x="160" y="74" width="96" height="14" rx="6" fill="#0B3C5D"></rect><g fill="#7FE0D8"><circle cx="174" cy="104" r="4"></circle><circle cx="188" cy="104" r="4"></circle><circle cx="202" cy="104" r="4"></circle></g><g fill="#FFFFFF"><rect x="170" y="118" width="12" height="30" rx="2"></rect><rect x="188" y="118" width="12" height="30" rx="2"></rect><rect x="206" y="118" width="12" height="30" rx="2"></rect><rect x="224" y="118" width="12" height="30" rx="2"></rect></g><g fill="#EF9F27"><circle cx="236" cy="104" r="4"></circle></g></g><g><rect x="280" y="112" width="52" height="48" rx="6" fill="#0B3C5D"></rect><circle cx="330" cy="100" r="40" fill="#1CB5AC"></circle><circle cx="330" cy="100" r="28" fill="#0E7F78"></circle><circle cx="330" cy="100" r="10" fill="#EAF3F6"></circle><g stroke="#7FE0D8" stroke-width="3"><line x1="330" y1="62" x2="330" y2="72"></line><line x1="368" y1="100" x2="358" y2="100"></line><line x1="330" y1="138" x2="330" y2="128"></line><line x1="292" y1="100" x2="302" y2="100"></line><line x1="357" y1="73" x2="350" y2="80"></line><line x1="303" y1="127" x2="310" y2="120"></line><line x1="357" y1="127" x2="350" y2="120"></line><line x1="303" y1="73" x2="310" y2="80"></line></g><rect x="370" y="94" width="26" height="12" rx="3" fill="#5B6B78"></rect></g></svg>
+<div style="padding: 24px"><h3 style="margin: 0 0 6px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Thiết bị điện và thiết bị kỹ thuật</h3><p style="margin: 0; color: #3D5568">Sản phẩm kỹ thuật điện, bộ điều khiển công nghiệp và các thiết bị kỹ thuật khác. Lựa chọn và cung cấp theo yêu cầu kỹ thuật của khách hàng, kể cả theo bảng câu hỏi.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="vi-gallery" style="padding: 96px 24px; background: #F4F8FA">
+<div style="max-width: 1200px; margin: 0 auto">
+<p style="margin: 0 0 8px; color: #0E7F78; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px" class="eyebrow">Hình ảnh</p>
+<h2 style="margin: 0 0 48px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.3rem; color: #0B3C5D; line-height: 1.2">Các lô hàng của chúng tôi</h2>
+<p style="margin: -32px 0 28px; color: #3D5568; font-size: 1.05rem">Hình ảnh các lô hàng, đóng gói và sản phẩm.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 28px"><img src="aluminium-ingots-warehouse.jpg" alt="Nhôm thỏi tái chế tại kho" loading="lazy" onclick="document.getElementById('gal-dlg-vi').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"><img src="aluminium-ingots-2.jpg" alt="Nhôm thỏi đã đóng đai chờ xuất" loading="lazy" onclick="document.getElementById('gal-dlg-vi').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"><img src="aluminium-pipes-amg6m.jpg" alt="Nhôm cán — ống" loading="lazy" onclick="document.getElementById('gal-dlg-vi').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"></div>
+<button type="button" onclick="document.getElementById('gal-dlg-vi').showModal()" style="padding: 14px 28px; background: #0B3C5D; color: #FFFFFF; border: 0; border-radius: 10px; font-size: 1rem; font-weight: 600; cursor: pointer">Xem thư viện ảnh (18 ảnh)</button>
+<dialog id="gal-dlg-vi" class="gal-dlg" onclick="if(event.target===this)this.close()" style="width: min(1200px, 94vw); max-height: 90vh; padding: 0; border: 0; border-radius: 16px; background: #F4F8FA">
+<div style="position: sticky; top: 0; z-index: 2; display: flex; justify-content: flex-end; padding: 12px 16px; background: #F4F8FA; border-bottom: 1px solid #DCE6EA"><button type="button" onclick="this.closest('dialog').close()" style="padding: 8px 18px; background: #FFFFFF; color: #0B3C5D; border: 1px solid #DCE6EA; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer">✕ Đóng</button></div>
+<div style="padding: 24px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-warehouse.jpg" alt="Nhôm thỏi tái chế tại kho" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Nhôm thỏi tái chế tại kho</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-2.jpg" alt="Nhôm thỏi đã đóng đai chờ xuất" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Nhôm thỏi đã đóng đai chờ xuất</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-pipes-amg6m.jpg" alt="Nhôm cán — ống" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Nhôm cán — ống</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="wire-rod-mechel.jpg" alt="Dây thép lò xo dạng cuộn" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Dây thép lò xo dạng cuộn</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="steel-plates-inspection.jpg" alt="Kiểm tra thép tấm khi nhận hàng" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Kiểm tra thép tấm khi nhận hàng</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="steel-plates-port.jpg" alt="Thép tấm tại cảng container" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Thép tấm tại cảng container</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="wooden-crate-packing.jpg" alt="Đóng gói xuất khẩu trong thùng gỗ" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Đóng gói xuất khẩu trong thùng gỗ</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-al2-ingots.jpg" alt="Nhôm thỏi hợp kim đúc AL2" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Nhôm thỏi hợp kim đúc AL2</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-plates-amg6.jpg" alt="Tấm nhôm hợp kim AMg6" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Tấm nhôm hợp kim AMg6</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-loading.jpg" alt="Bốc xếp nhôm thỏi tại kho" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Bốc xếp nhôm thỏi tại kho</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-container.jpg" alt="Nhôm thỏi được chằng buộc trong container" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Nhôm thỏi được chằng buộc trong container</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="pine-pitch.jpg" alt="Nhựa thông (nhựa hữu cơ)" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Nhựa thông (nhựa hữu cơ)</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="resin-export-pallet.jpg" alt="Lô nhựa trên pallet tại sân bay" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Lô nhựa trên pallet tại sân bay</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="chemicals-hazmat-boxes.jpg" alt="Bao bì cho chất lỏng dễ cháy (hàng nguy hiểm)" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Bao bì cho chất lỏng dễ cháy (hàng nguy hiểm)</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="chemicals-un-packaging.jpg" alt="Hóa chất trong bao bì đạt chuẩn UN" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Hóa chất trong bao bì đạt chuẩn UN</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="chemicals-overpack.jpg" alt="Kiện hàng nguy hiểm (overpack) sẵn sàng vận chuyển hàng không" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Kiện hàng nguy hiểm (overpack) sẵn sàng vận chuyển hàng không</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="crates-truck-loading.jpg" alt="Thùng gỗ xuất khẩu trên xe tải" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Thùng gỗ xuất khẩu trên xe tải</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="pallet-wrapped.jpg" alt="Pallet được quấn màng để vận chuyển" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Pallet được quấn màng để vận chuyển</figcaption></figure>
+</div>
+</div>
+</dialog>
+</div>
+</section>
+
+<section id="vi-contact" style="padding: 0 24px 96px" class="contact">
+<div style="max-width: 1200px; margin: 0 auto; background: #0B3C5D; color: #FFFFFF; border-radius: 24px; padding: 56px 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
+<div style="flex: 999 1 420px; min-width: 0">
+<h2 style="margin: 0 0 12px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.2rem; line-height: 1.2">Liên hệ</h2>
+<p style="margin: 0; color: #D5E4EC; font-size: 1.1rem">Mọi câu hỏi về cung ứng, chứng từ và hợp tác, vui lòng liên hệ qua email hoặc số điện thoại dưới đây.</p>
+</div>
+<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 10px">
+<a href="mailto:info@internagroupp.com" style="text-decoration: none; background: #1CB5AC; color: #062A33; font-weight: 600; padding: 14px 24px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center" class="c-mail">info@internagroupp.com</a>
+<p style="margin: 0; text-align: center; color: #D5E4EC" class="c-tel"><a href="tel:+79177759226" style="color: inherit; text-decoration: none">+7 (917) 775-92-26</a><br><a href="tel:+73472461068" style="color: inherit; text-decoration: none">+7 (347) 246-10-68</a></p>
+<p style="margin: 8px 0 0; text-align: center; color: #D5E4EC; font-size: 0.9rem; line-height: 1.5" class="c-addr"><strong>Địa chỉ pháp lý:</strong><br>Số 13 phố Oblepikhovaya, Nagaevo<br>Ufa, Cộng hòa Bashkortostan 450900<br>Liên bang Nga</p>
+<p style="margin: 8px 0 0; text-align: center; color: #D5E4EC; font-size: 0.9rem; line-height: 1.5" class="c-addr"><strong>Địa chỉ nhận thư:</strong><br>Văn phòng 209, số 1/1 phố Komsomolskaya<br>Ufa, Cộng hòa Bashkortostan 450001<br>Liên bang Nga</p>
+<p style="margin: 8px 0 0; text-align: center; color: #D5E4EC; font-size: 0.9rem; line-height: 1.5" class="c-id"><strong>Mã số thuế (INN):</strong> 0276963506<br><strong>Số đăng ký (OGRN):</strong> 1210200037508</p>
+</div>
+</div>
+</section>
+
+<footer style="background: #FFFFFF; border-top: 1px solid #DCE6EA">
+<div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: #4A6478; font-size: 15px">
+<span>© 2026 Công ty TNHH Interna Group</span>
+</div>
+</footer>
+</div>
+</div>
+
+<div data-lang="ru" hidden="">
+<div lang="ru">
+<header style="background: #FFFFFF; border-bottom: 1px solid #DCE6EA" class="site-hdr">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#ru-top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #0B3C5D">
+<svg width="40" height="40" viewBox="0 0 1024 1024" aria-hidden="true"><g stroke-linejoin="round"><polygon points="939,84 259.2,84 939,763.8" fill="#17C3B2" stroke="#17C3B2" stroke-width="88"></polygon><polygon points="84,878.8 449.3,511.5 84,144.2" fill="#0A3D62" stroke="#0A3D62" stroke-width="88"></polygon><polygon points="211.6,943 886.4,943 550,604.6" fill="#3B6381" stroke="#3B6381" stroke-width="80"></polygon></g></svg>
+<span style="font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 0.02em">ИНТЕРНА ГРУПП</span>
+</a>
+<button type="button" class="burger" aria-expanded="false" aria-controls="nav-ru" aria-label="Меню"><span></span><span></span><span></span></button><nav aria-label="Главное меню" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-weight: 500" class="site-nav" id="nav-ru">
+<a href="#ru-about" style="text-decoration: none">О компании</a>
+<a href="#ru-process" style="text-decoration: none">Как мы работаем</a>
+<a href="#ru-products" style="text-decoration: none">Товары</a>
+<a href="#ru-gallery" style="text-decoration: none">Галерея</a>
+<a href="#ru-contact" style="text-decoration: none; background: #0B3C5D; color: #FFFFFF; padding: 12px 22px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Контакты</a>
+<div role="group" aria-label="Язык" style="display: flex; gap: 4px; background: #EEF3F5; padding: 4px; border-radius: 12px">
+<button type="button" class="lb" data-set="en">АНГЛ</button>
+<button type="button" class="lb" data-set="ru">РУС</button>
+<button type="button" class="lb" data-set="vi">ВЬЕТ</button>
+</div>
+</nav>
+</div>
+</header>
+
+<section id="ru-top" style="background: #0B3C5D; color: #FFFFFF; position: relative; overflow: hidden" class="hero">
+<div aria-hidden="true" style="position: absolute; inset: 0; opacity: 0.12; pointer-events: none; z-index: 0; display: flex"><svg width="50%" height="100%" viewBox="0 0 680 400" preserveAspectRatio="xMidYMax slice" style="display: block; flex: 1 1 50%"><circle cx="600" cy="64" r="28" fill="#F6D58E"></circle><ellipse cx="160" cy="56" rx="54" ry="12" fill="#FFFFFF"></ellipse><ellipse cx="192" cy="46" rx="32" ry="12" fill="#FFFFFF"></ellipse><ellipse cx="430" cy="74" rx="44" ry="10" fill="#FFFFFF"></ellipse><path d="M20 196 L20 150 Q90 104 160 150 L160 196 Z" fill="#B7D3DE"></path><rect x="160" y="166" width="230" height="30" fill="#B7D3DE"></rect><rect x="566" y="96" width="22" height="100" fill="#B7D3DE"></rect><polygon points="552,90 602,90 594,72 560,72" fill="#7FB8D6"></polygon><rect x="574" y="56" width="6" height="16" fill="#B7D3DE"></rect><rect x="0" y="196" width="680" height="204" fill="#7FB8D6"></rect><rect x="0" y="196" width="680" height="3" fill="#EF9F27"></rect><g fill="#F2B54A"><rect x="20" y="372" width="54" height="5"></rect><rect x="134" y="372" width="54" height="5"></rect><rect x="248" y="372" width="54" height="5"></rect><rect x="362" y="372" width="54" height="5"></rect><rect x="476" y="372" width="54" height="5"></rect><rect x="590" y="372" width="54" height="5"></rect></g><polygon points="154,214 112,128 140,128 206,214" fill="#FFFFFF"></polygon><polygon points="112,128 140,128 154,158 126,158" fill="#1CB5AC"></polygon><polygon points="140,240 96,246 98,258 156,254" fill="#FFFFFF"></polygon><path d="M150 210 L520 210 Q588 210 608 236 Q588 262 520 262 L178 262 Q144 262 132 242 L132 230 Q138 210 150 210 Z" fill="#FFFFFF"></path><path d="M520 198 Q562 198 580 216 L520 216 Z" fill="#FFFFFF"></path><rect x="148" y="240" width="384" height="7" fill="#1CB5AC"></rect><polygon points="284,248 402,248 316,284 272,284" fill="#FFFFFF"></polygon><g fill="#FFFFFF"><rect x="284" y="268" width="50" height="20" rx="10"></rect><rect x="338" y="262" width="50" height="20" rx="10"></rect><circle cx="292" cy="312" r="10"></circle><circle cx="312" cy="312" r="10"></circle><circle cx="352" cy="312" r="10"></circle><circle cx="372" cy="312" r="10"></circle><circle cx="540" cy="312" r="9"></circle></g><g stroke="#FFFFFF" stroke-width="5"><line x1="300" y1="262" x2="300" y2="306"></line><line x1="360" y1="262" x2="360" y2="306"></line><line x1="540" y1="258" x2="540" y2="306"></line></g><g fill="#FFFFFF"><rect x="40" y="300" width="58" height="16"></rect><rect x="48" y="282" width="28" height="18"></rect><rect x="112" y="306" width="108" height="10"></rect></g><polygon points="116,306 138,306 138,286 127,280 116,286" fill="#1CB5AC"></polygon><polygon points="142,306 162,306 162,288 152,282 142,288" fill="#D85A30"></polygon><polygon points="170,306 192,306 192,286 181,280 170,286" fill="#EF9F27"></polygon><polygon points="196,306 216,306 216,288 206,282 196,288" fill="#1CB5AC"></polygon><rect x="566" y="290" width="98" height="28" rx="10" fill="#D85A30"></rect></svg><svg width="50%" height="100%" viewBox="0 0 680 400" preserveAspectRatio="xMidYMax slice" style="display: block; flex: 1 1 50%"><circle cx="560" cy="80" r="34" fill="#F6D58E"></circle><ellipse cx="140" cy="70" rx="60" ry="14" fill="#FFFFFF"></ellipse><ellipse cx="175" cy="60" rx="38" ry="14" fill="#FFFFFF"></ellipse><ellipse cx="420" cy="105" rx="50" ry="11" fill="#FFFFFF"></ellipse><path d="M0 205 L60 180 L120 195 L190 170 L260 192 L330 176 L400 196 L470 182 L540 198 L610 178 L680 192 L680 230 L0 230 Z" fill="#B7D3DE"></path><rect x="0" y="300" width="680" height="100" fill="#2E6F96"></rect><rect x="360" y="200" width="320" height="38" fill="#B7D3DE"></rect><rect x="470" y="160" width="40" height="18" fill="#1CB5AC"></rect><rect x="512" y="160" width="40" height="18" fill="#FFFFFF"></rect><rect x="554" y="160" width="40" height="18" fill="#D85A30"></rect><rect x="596" y="160" width="40" height="18" fill="#1CB5AC"></rect><rect x="470" y="180" width="40" height="18" fill="#7FB8D6"></rect><rect x="512" y="180" width="40" height="18" fill="#EF9F27"></rect><rect x="554" y="180" width="40" height="18" fill="#7FB8D6"></rect><rect x="596" y="180" width="40" height="18" fill="#FFFFFF"></rect><rect x="491" y="140" width="40" height="18" fill="#EF9F27"></rect><rect x="533" y="140" width="40" height="18" fill="#1CB5AC"></rect><rect x="575" y="140" width="40" height="18" fill="#7FB8D6"></rect><g fill="#EF9F27"><rect x="380" y="70" width="8" height="130"></rect><rect x="430" y="70" width="8" height="130"></rect><rect x="290" y="62" width="200" height="10"></rect><rect x="372" y="40" width="74" height="22"></rect><polygon points="380,72 430,72 405,98"></polygon><rect x="236" y="96" width="7" height="104"></rect><rect x="276" y="96" width="7" height="104"></rect><rect x="200" y="88" width="120" height="8"></rect><rect x="230" y="70" width="44" height="18"></rect></g><g fill="#1CB5AC"><rect x="40" y="200" width="300" height="44"></rect><polygon points="340,200 372,200 340,244"></polygon><polygon points="40,200 20,200 40,244"></polygon></g><rect x="56" y="152" width="44" height="48" fill="#FFFFFF"></rect><rect x="72" y="134" width="12" height="18" fill="#FFFFFF"></rect><rect x="110" y="182" width="36" height="18" fill="#D85A30"></rect><rect x="148" y="182" width="36" height="18" fill="#FFFFFF"></rect><rect x="186" y="182" width="36" height="18" fill="#EF9F27"></rect><rect x="224" y="182" width="36" height="18" fill="#7FB8D6"></rect><rect x="262" y="182" width="36" height="18" fill="#1CB5AC"></rect><rect x="300" y="182" width="30" height="18" fill="#D85A30"></rect><rect x="110" y="164" width="36" height="18" fill="#7FB8D6"></rect><rect x="148" y="164" width="36" height="18" fill="#EF9F27"></rect><rect x="186" y="164" width="36" height="18" fill="#FFFFFF"></rect><rect x="224" y="164" width="36" height="18" fill="#D85A30"></rect><rect x="262" y="164" width="36" height="18" fill="#FFFFFF"></rect><rect x="129" y="146" width="36" height="18" fill="#1CB5AC"></rect><rect x="167" y="146" width="36" height="18" fill="#D85A30"></rect><rect x="205" y="146" width="36" height="18" fill="#7FB8D6"></rect></svg></div>
+<div style="position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 96px 24px 104px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 999 1 520px; min-width: 0">
+<p style="margin: 0 0 16px; color: #7FE0D8; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px" class="eyebrow">Экспортные поставки</p>
+<h1 style="margin: 0 0 24px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 3.2rem; line-height: 1.12">Надёжные экспортные поставки промышленных товаров из Европы в Юго-Восточную Азию — авиа и морем.</h1>
+<p style="margin: 0 0 36px; font-size: 1.2rem; color: #D5E4EC; max-width: 600px">Полный цикл внешнеторговой сделки: закупка у производителя, контрактование, экспортное оформление и международная логистика.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#ru-products" style="text-decoration: none; background: #1CB5AC; color: #062A33; font-weight: 600; padding: 14px 28px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Товары</a>
+<a href="#ru-process" style="text-decoration: none; border: 2px solid #5C8DAD; color: #FFFFFF; font-weight: 600; padding: 12px 26px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Как мы работаем</a>
+</div>
+<figure class="route" aria-label="Европа → Юго-Восточная Азия"><svg viewBox="0 0 640 132" role="img" aria-hidden="true"><defs><mask id="rm-ru"><rect class="rm" x="0" y="0" width="640" height="132" fill="#fff"></rect></mask></defs><g mask="url(#rm-ru)"><path d="M24 104 Q320 -8 616 104" fill="none" stroke="#17C3B2" stroke-width="2.5" stroke-dasharray="7 7"></path><path d="M24 104 C190 138 450 138 616 104" fill="none" stroke="#8FB3C9" stroke-width="2.5"></path></g><circle cx="24" cy="104" r="6" fill="#FFFFFF"></circle><circle class="dest" cx="616" cy="104" r="6" fill="#17C3B2"></circle><text x="320" y="36" text-anchor="middle" class="rl">Авиаперевозка</text><text x="320" y="130" text-anchor="middle" class="rl">Морская перевозка</text></svg><figcaption><span>Европа</span><span>Юго-Восточная Азия</span></figcaption></figure></div>
+</div>
+</section>
+
+<section id="ru-about" style="padding: 96px 24px">
+<div style="max-width: 1200px; margin: 0 auto">
+<p style="margin: 0 0 8px; color: #0E7F78; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px" class="eyebrow">О компании</p>
+<h2 style="margin: 0 0 16px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.3rem; color: #0B3C5D; line-height: 1.2">ООО «Интерна Групп»</h2>
+<p style="margin: 0 0 32px; max-width: 820px; color: #3D5568; font-size: 1.05rem; line-height: 1.7">Экспортная компания из Уфы, работаем с 2021 года. Поставляем промышленные товары и химическую продукцию в страны Юго-Восточной Азии авиа- и морским транспортом. Имеем опыт отправки опасных грузов в соответствии с IATA DGR.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="padding: 14px 20px; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 12px; color: #0B3C5D; font-weight: 600">С 2021 года</div>
+<div style="padding: 14px 20px; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 12px; color: #0B3C5D; font-weight: 600">Авиа и морские перевозки</div>
+<div style="padding: 14px 20px; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 12px; color: #0B3C5D; font-weight: 600">Опасные грузы (IATA DGR)</div>
+</div>
+</div>
+</section>
+
+<section id="ru-process" style="padding: 96px 24px; background: #FFFFFF; border-top: 1px solid #DCE6EA; border-bottom: 1px solid #DCE6EA">
+<div style="max-width: 1200px; margin: 0 auto">
+<p style="margin: 0 0 8px; color: #0E7F78; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px" class="eyebrow">Экспортное сопровождение</p>
+<h2 style="margin: 0 0 16px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.3rem; color: #0B3C5D; line-height: 1.2">Полный цикл внешнеторговой сделки</h2>
+<p style="margin: 0 0 48px; max-width: 760px; color: #3D5568; font-size: 1.05rem; line-height: 1.6">От квалификации производителя до выпуска груза в стране назначения.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px" class="timeline">
+<div style="display: flex; flex-direction: column">
+<div style="font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.6rem; color: #1CB5AC; line-height: 1">01</div>
+<h3 style="margin: 12px 0 8px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Закупка и квалификация поставщика</h3>
+<p style="margin: 0 0 12px; color: #3D5568; line-height: 1.6">Подбор производителя под ТЗ покупателя, проверка соответствия ГОСТ / EN / ASTM, входной контроль, сверка сертификатов и паспортов качества.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #DCE6EA; color: #4A6478; font-size: 0.9rem; line-height: 1.5"><strong style="color: #0E7F78">Документы:</strong> спецификация, сертификат качества (в т. ч. 3.1 по EN 10204).</p>
+</div>
+<div style="display: flex; flex-direction: column">
+<div style="font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.6rem; color: #1CB5AC; line-height: 1">02</div>
+<h3 style="margin: 12px 0 8px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Контрактование и валютный контроль</h3>
+<p style="margin: 0 0 12px; color: #3D5568; line-height: 1.6">ВЭД-контракт на базисах Incoterms 2020 (FCA, CPT/CIP, DAP), постановка контракта на учёт в уполномоченном банке, сопровождение валютного контроля.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #DCE6EA; color: #4A6478; font-size: 0.9rem; line-height: 1.5"><strong style="color: #0E7F78">Документы:</strong> контракт, спецификации, проформа-инвойс, УНК.</p>
+</div>
+<div style="display: flex; flex-direction: column">
+<div style="font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.6rem; color: #1CB5AC; line-height: 1">03</div>
+<h3 style="margin: 12px 0 8px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Таможенное оформление и происхождение</h3>
+<p style="margin: 0 0 12px; color: #3D5568; line-height: 1.6">Классификация по ТН ВЭД ЕАЭС, экспортное декларирование, сертификат происхождения EAV через ТПП, фумигация тары по ISPM 15. Подготовка опасных грузов (классы 3, 8 и др.) по IATA DGR и IMDG Code.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #DCE6EA; color: #4A6478; font-size: 0.9rem; line-height: 1.5"><strong style="color: #0E7F78">Документы:</strong> ДТ, инвойс, упаковочный лист, сертификат EAV, DGD, SDS.</p>
+</div>
+<div style="display: flex; flex-direction: column">
+<div style="font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.6rem; color: #1CB5AC; line-height: 1">04</div>
+<h3 style="margin: 12px 0 8px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Логистика</h3>
+<p style="margin: 0 0 12px; color: #3D5568; line-height: 1.6">Авиаотправки, включая DG-грузы, и морские контейнерные перевозки FCL/LCL. Раскрепление груза и трекинг до выдачи грузополучателю; страхование груза — через партнёра-брокера.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #DCE6EA; color: #4A6478; font-size: 0.9rem; line-height: 1.5"><strong style="color: #0E7F78">Документы:</strong> AWB/HAWB, коносамент (B/L), страховой полис.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="ru-products" style="padding: 96px 24px">
+<div style="max-width: 1200px; margin: 0 auto">
+<p style="margin: 0 0 8px; color: #0E7F78; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px" class="eyebrow">Товары</p>
+<h2 style="margin: 0 0 16px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.3rem; color: #0B3C5D; line-height: 1.2">Промышленные товары и оборудование</h2>
+<p style="margin: 0 0 40px; max-width: 820px; color: #3D5568; font-size: 1.05rem; line-height: 1.6">Поставляем широкий спектр промышленной продукции: от металлопроката до сложного инженерного оборудования. Подбор ведём по техническому заданию или опросному листу заказчика.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px" class="prod-grid">
+<div style="background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden">
+<img src="aluminium-ingots-1.jpg" alt="Алюминий и сплавы" loading="lazy" style="display: block; width: 100%; height: 200px; object-fit: cover">
+<div style="padding: 24px"><h3 style="margin: 0 0 6px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Алюминий и сплавы</h3><p style="margin: 0; color: #3D5568">Вторичный алюминий в чушках, алюминиевый прокат — листы, плиты, трубы, круги — а также полуфабрикаты от проверенных производителей.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden">
+<img src="copper-strips.jpg" alt="Металлопрокат" loading="lazy" style="display: block; width: 100%; height: 200px; object-fit: cover">
+<div style="padding: 24px"><h3 style="margin: 0 0 6px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Металлопрокат</h3><p style="margin: 0; color: #3D5568">Стальные листы, катанка и проволока, медные и латунные полосы — с раскроем по размеру и упаковкой для дальней перевозки.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden">
+<img src="valves.jpg" alt="Трубопроводная арматура" loading="lazy" style="display: block; width: 100%; height: 200px; object-fit: cover">
+<div style="padding: 24px"><h3 style="margin: 0 0 6px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Трубопроводная арматура</h3><p style="margin: 0; color: #3D5568">Вентили, задвижки и фитинги для промышленных трубопроводов — с сертификатами и паспортами.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden">
+<img src="sealant-cans.jpg" alt="Промышленная химия" loading="lazy" style="display: block; width: 100%; height: 200px; object-fit: cover">
+<div style="padding: 24px"><h3 style="margin: 0 0 6px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Промышленная химия</h3><p style="margin: 0; color: #3D5568">Герметики, технические смазки и органическая смола — сосновый пек — для промышленного и строительного применения. Поставляется с паспортами безопасности (SDS/MSDS).</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden">
+<svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Электротехника и оборудование" style="display: block; width: 100%; height: 200px; background: #EAF3F6"><rect x="0" y="160" width="400" height="40" fill="#D5E4EC"></rect><g><rect x="30" y="58" width="104" height="102" rx="8" fill="#0B3C5D"></rect><rect x="42" y="70" width="80" height="34" rx="4" fill="#7FE0D8"></rect><polyline points="46,96 58,84 70,90 82,76 94,86 106,78 118,82" fill="none" stroke="#0B3C5D" stroke-width="2.5"></polyline><circle cx="56" cy="128" r="8" fill="#1CB5AC"></circle><circle cx="82" cy="128" r="8" fill="#EF9F27"></circle><rect x="100" y="120" width="22" height="16" rx="3" fill="#2E6F96"></rect><rect x="74" y="160" width="16" height="0" fill="none"></rect></g><g><rect x="160" y="74" width="96" height="86" rx="6" fill="#2E6F96"></rect><rect x="160" y="74" width="96" height="14" rx="6" fill="#0B3C5D"></rect><g fill="#7FE0D8"><circle cx="174" cy="104" r="4"></circle><circle cx="188" cy="104" r="4"></circle><circle cx="202" cy="104" r="4"></circle></g><g fill="#FFFFFF"><rect x="170" y="118" width="12" height="30" rx="2"></rect><rect x="188" y="118" width="12" height="30" rx="2"></rect><rect x="206" y="118" width="12" height="30" rx="2"></rect><rect x="224" y="118" width="12" height="30" rx="2"></rect></g><g fill="#EF9F27"><circle cx="236" cy="104" r="4"></circle></g></g><g><rect x="280" y="112" width="52" height="48" rx="6" fill="#0B3C5D"></rect><circle cx="330" cy="100" r="40" fill="#1CB5AC"></circle><circle cx="330" cy="100" r="28" fill="#0E7F78"></circle><circle cx="330" cy="100" r="10" fill="#EAF3F6"></circle><g stroke="#7FE0D8" stroke-width="3"><line x1="330" y1="62" x2="330" y2="72"></line><line x1="368" y1="100" x2="358" y2="100"></line><line x1="330" y1="138" x2="330" y2="128"></line><line x1="292" y1="100" x2="302" y2="100"></line><line x1="357" y1="73" x2="350" y2="80"></line><line x1="303" y1="127" x2="310" y2="120"></line><line x1="357" y1="127" x2="350" y2="120"></line><line x1="303" y1="73" x2="310" y2="80"></line></g><rect x="370" y="94" width="26" height="12" rx="3" fill="#5B6B78"></rect></g></svg>
+<div style="padding: 24px"><h3 style="margin: 0 0 6px; font-family: Manrope, 'Segoe UI', sans-serif; font-size: 1.2rem; color: #0B3C5D">Электротехника и оборудование</h3><p style="margin: 0; color: #3D5568">Электротехническая продукция, промышленные контроллеры и другое инженерное оборудование. Подбор и поставка по спецификации заказчика, в том числе по опросным листам.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="ru-gallery" style="padding: 96px 24px; background: #F4F8FA">
+<div style="max-width: 1200px; margin: 0 auto">
+<p style="margin: 0 0 8px; color: #0E7F78; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 14px" class="eyebrow">Фотогалерея</p>
+<h2 style="margin: 0 0 48px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.3rem; color: #0B3C5D; line-height: 1.2">Наши поставки</h2>
+<p style="margin: -32px 0 28px; color: #3D5568; font-size: 1.05rem">Фото отгрузок, упаковки и продукции.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 28px"><img src="aluminium-ingots-warehouse.jpg" alt="Чушки из вторичного алюминия на складе" loading="lazy" onclick="document.getElementById('gal-dlg-ru').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"><img src="aluminium-ingots-2.jpg" alt="Чушки алюминия, упакованные к отгрузке" loading="lazy" onclick="document.getElementById('gal-dlg-ru').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"><img src="aluminium-pipes-amg6m.jpg" alt="Алюминиевый прокат — трубы" loading="lazy" onclick="document.getElementById('gal-dlg-ru').showModal()" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; cursor: pointer"></div>
+<button type="button" onclick="document.getElementById('gal-dlg-ru').showModal()" style="padding: 14px 28px; background: #0B3C5D; color: #FFFFFF; border: 0; border-radius: 10px; font-size: 1rem; font-weight: 600; cursor: pointer">Открыть галерею (18 фото)</button>
+<dialog id="gal-dlg-ru" class="gal-dlg" onclick="if(event.target===this)this.close()" style="width: min(1200px, 94vw); max-height: 90vh; padding: 0; border: 0; border-radius: 16px; background: #F4F8FA">
+<div style="position: sticky; top: 0; z-index: 2; display: flex; justify-content: flex-end; padding: 12px 16px; background: #F4F8FA; border-bottom: 1px solid #DCE6EA"><button type="button" onclick="this.closest('dialog').close()" style="padding: 8px 18px; background: #FFFFFF; color: #0B3C5D; border: 1px solid #DCE6EA; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer">✕ Закрыть</button></div>
+<div style="padding: 24px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-warehouse.jpg" alt="Чушки из вторичного алюминия на складе" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Чушки из вторичного алюминия на складе</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-2.jpg" alt="Чушки алюминия, упакованные к отгрузке" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Чушки алюминия, упакованные к отгрузке</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-pipes-amg6m.jpg" alt="Алюминиевый прокат — трубы" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Алюминиевый прокат — трубы</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="wire-rod-mechel.jpg" alt="Пружинная проволока в мотках" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Пружинная проволока в мотках</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="steel-plates-inspection.jpg" alt="Приёмка стальных листов" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Приёмка стальных листов</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="steel-plates-port.jpg" alt="Стальные листы на контейнерном терминале" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Стальные листы на контейнерном терминале</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="wooden-crate-packing.jpg" alt="Экспортная упаковка в деревянный ящик" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Экспортная упаковка в деревянный ящик</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-al2-ingots.jpg" alt="Чушки литейного алюминиевого сплава АЛ2" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Чушки литейного алюминиевого сплава АЛ2</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-plates-amg6.jpg" alt="Плиты из сплава АМг6" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Плиты из сплава АМг6</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-loading.jpg" alt="Погрузка алюминиевых чушек на складе" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Погрузка алюминиевых чушек на складе</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="aluminium-ingots-container.jpg" alt="Алюминиевые чушки, закреплённые в контейнере" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Алюминиевые чушки, закреплённые в контейнере</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="pine-pitch.jpg" alt="Сосновый пек (органическая смола)" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Сосновый пек (органическая смола)</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="resin-export-pallet.jpg" alt="Партия смолы на паллете в аэропорту" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Партия смолы на паллете в аэропорту</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="chemicals-hazmat-boxes.jpg" alt="Упаковка для легковоспламеняющихся жидкостей (опасный груз)" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Упаковка для легковоспламеняющихся жидкостей (опасный груз)</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="chemicals-un-packaging.jpg" alt="Химия в сертифицированной UN-упаковке" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Химия в сертифицированной UN-упаковке</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="chemicals-overpack.jpg" alt="Опасный груз в транспортной упаковке для авиаперевозки" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Опасный груз в транспортной упаковке для авиаперевозки</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="crates-truck-loading.jpg" alt="Экспортные ящики в кузове" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Экспортные ящики в кузове</figcaption></figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #DCE6EA; border-radius: 16px; overflow: hidden"><img src="pallet-wrapped.jpg" alt="Паллета, упакованная для перевозки" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover"><figcaption style="padding: 12px 16px; color: #3D5568; font-size: 0.95rem">Паллета, упакованная для перевозки</figcaption></figure>
+</div>
+</div>
+</dialog>
+</div>
+</section>
+
+<section id="ru-contact" style="padding: 0 24px 96px" class="contact">
+<div style="max-width: 1200px; margin: 0 auto; background: #0B3C5D; color: #FFFFFF; border-radius: 24px; padding: 56px 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
+<div style="flex: 999 1 420px; min-width: 0">
+<h2 style="margin: 0 0 12px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 2.2rem; line-height: 1.2">Контакты</h2>
+<p style="margin: 0; color: #D5E4EC; font-size: 1.1rem">По вопросам поставок, документов и сотрудничества пишите на почту или звоните по телефонам ниже.</p>
+</div>
+<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 10px">
+<a href="mailto:info@internagroupp.com" style="text-decoration: none; background: #1CB5AC; color: #062A33; font-weight: 600; padding: 14px 24px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center" class="c-mail">info@internagroupp.com</a>
+<p style="margin: 0; text-align: center; color: #D5E4EC" class="c-tel"><a href="tel:+79177759226" style="color: inherit; text-decoration: none">+7 (917) 775-92-26</a><br><a href="tel:+73472461068" style="color: inherit; text-decoration: none">+7 (347) 246-10-68</a></p>
+<p style="margin: 8px 0 0; text-align: center; color: #D5E4EC; font-size: 0.9rem; line-height: 1.5" class="c-addr"><strong>Юридический адрес:</strong><br>450900, Республика Башкортостан, г. Уфа, с. Нагаево, ул. Облепиховая, д. 13</p>
+<p style="margin: 8px 0 0; text-align: center; color: #D5E4EC; font-size: 0.9rem; line-height: 1.5" class="c-addr"><strong>Адрес для корреспонденции:</strong><br>450001, Республика Башкортостан, г. Уфа, ул. Комсомольская, д. 1/1, офис 209</p>
+<p style="margin: 8px 0 0; text-align: center; color: #D5E4EC; font-size: 0.9rem; line-height: 1.5" class="c-id"><strong>ИНН:</strong> 0276963506<br><strong>ОГРН:</strong> 1210200037508</p>
+<p style="margin: 14px 0 0; text-align: center" class="c-doc"><a href="interna-group-rekvizity.pdf" download="Реквизиты_Интерна_Групп.pdf" style="display: inline-flex; align-items: center; gap: 8px; color: #7FE0D8; font-weight: 600; text-decoration: underline; text-underline-offset: 3px">Скачать карточку предприятия (PDF)</a></p>
+</div>
+</div>
+</section>
+
+<footer style="background: #FFFFFF; border-top: 1px solid #DCE6EA">
+<div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: #4A6478; font-size: 15px">
+<span>© 2026 ООО «Интерна Групп»</span>
+</div>
+</footer>
+</div>
+</div>
+</div>
+<script>
+(function(){
+  function set(l){
+    document.querySelectorAll('[data-lang]').forEach(function(e){e.hidden=e.dataset.lang!==l;});
+    document.querySelectorAll('.lb').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.set===l?'true':'false');});
+    document.documentElement.lang=l;
+    try{localStorage.setItem('lang',l);}catch(e){}
+  }
+  document.querySelectorAll('.lb').forEach(function(b){b.addEventListener('click',function(){set(b.dataset.set);});});
+  var l='en';
+  try{l=localStorage.getItem('lang')||(function(n){return n==='ru'||n==='vi'?n:'en';})((navigator.language||'').slice(0,2));}catch(e){}
+  set(l);
+})();
+</script>
+
+
+<script>(function(){document.querySelectorAll('.burger').forEach(function(b){b.addEventListener('click',function(){var h=b.closest('header');var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});});document.querySelectorAll('.site-nav a').forEach(function(a){a.addEventListener('click',function(){var h=a.closest('header');h.classList.remove('open');var b=h.querySelector('.burger');if(b)b.setAttribute('aria-expanded','false');});});})();</script></body></html>
