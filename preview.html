@@ -100,7 +100,8 @@ button[onclick*="showModal"]{border-radius:999px!important}
 footer{font-size:.9rem}
 
 .gal-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
-.gs-item{position:relative;display:block;padding:0;border:0;border-radius:6px;overflow:hidden;cursor:pointer;aspect-ratio:1/1;background:#DDE4E8}
+.gs-item{position:relative;display:block;padding:0;border:0;border-radius:6px!important;overflow:hidden;cursor:pointer;aspect-ratio:1/1;background:#DDE4E8}
+.gal-strip button.gs-item{border-radius:6px!important}
 .gs-item img{display:block;width:100%;height:100%;object-fit:cover}
 .gs-more{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,61,98,.72);color:#fff;font-family:'Unbounded',sans-serif;font-weight:600;font-size:1.6rem}
 .gs-item:focus-visible{outline:3px solid #17C3B2;outline-offset:2px}
