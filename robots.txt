@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /interna-group-rekvizity.pdf
+Disallow: /preview.html
+Disallow: /preview2.html
 
 Sitemap: https://www.internagroupp.com/sitemap.xml
