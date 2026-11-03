@@ -154,6 +154,19 @@ dialog.gal-dlg figure:hover img{filter:none}
 dialog.gal-dlg figcaption{font-family:'Lora',Georgia,serif!important;font-style:italic;font-size:.92rem!important;color:var(--muted)!important;text-align:center;padding:10px 6px 4px!important}
 /* step4 italic captions */
 .ed-sec .cap{margin:10px 0 0!important;font-family:'Lora',Georgia,serif;font-style:italic;font-size:.88rem!important;line-height:1.5!important;color:var(--muted)!important;text-align:center}
+
+.hero{padding:0 24px 72px!important}
+.hero-cover{position:relative;width:100vw;margin-left:calc(50% - 50vw);min-height:clamp(380px,44vw,600px);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:72px 24px;overflow:hidden;box-sizing:border-box}
+.hero-cover>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1);z-index:0}
+.hero-cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,20,28,.55) 0%,rgba(12,20,28,.68) 100%);z-index:1}
+.hero-cover h1,.hero-cover p{position:relative;z-index:2;color:#FFFFFF!important;text-shadow:0 1px 18px rgba(0,0,0,.35)}
+.hero-cover p{opacity:.95}
+/*v2*/
+.hero>div{padding-top:0!important}
+.hero-cover::after{background:radial-gradient(ellipse 70% 80% at 50% 50%,rgba(8,16,24,.74) 0%,rgba(8,16,24,.6) 60%,rgba(8,16,24,.52) 100%)!important}
+.hero-cover p{font-size:1.12rem!important;line-height:1.7!important;color:#F2F2F0!important}
+
+.hero-btns{margin-top:40px!important;display:flex!important;justify-content:center;gap:14px;flex-wrap:wrap}
 </style></head>
 <body>
 <div data-lang="ru">
@@ -170,15 +183,15 @@ dialog.gal-dlg figcaption{font-family:'Lora',Georgia,serif!important;font-style:
 <section id="ru-top" style="background: #0B3C5D; color: #FFFFFF; position: relative; overflow: hidden" class="hero">
 
 <div style="position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 96px 24px 104px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
-<div style="flex: 999 1 520px; min-width: 0">
+<div style="flex: 999 1 520px; min-width: 0"><div class="hero-cover"><img src="/hero-logistics.webp" alt="Морской порт и грузовой аэропорт" onerror="this.onerror=null;this.src='/aluminium-ingots-warehouse.webp'"><h1 style="margin: 0 0 24px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 3.2rem; line-height: 1.12">Экспортные поставки промышленных товаров из Европы в Юго-Восточную Азию — авиа и морем</h1><p style="margin: 0 0 36px; font-size: 1.2rem; color: #D5E4EC; max-width: 600px">Полный цикл внешнеторговой сделки: закупка у производителя, контрактование, экспортное оформление и международная логистика.</p></div>
 
-<h1 style="margin: 0 0 24px; font-family: Manrope, 'Segoe UI', sans-serif; font-weight: 800; font-size: 3.2rem; line-height: 1.12">Экспортные поставки промышленных товаров из Европы в Юго-Восточную Азию — авиа и морем</h1>
-<p style="margin: 0 0 36px; font-size: 1.2rem; color: #D5E4EC; max-width: 600px">Полный цикл внешнеторговой сделки: закупка у производителя, контрактование, экспортное оформление и международная логистика.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 14px">
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 14px" class="hero-btns">
 <a href="#ru-products" style="text-decoration: none; background: #1CB5AC; color: #062A33; font-weight: 600; padding: 14px 28px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Товары</a>
 <a href="#ru-process" style="text-decoration: none; border: 2px solid #5C8DAD; color: #FFFFFF; font-weight: 600; padding: 12px 26px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Как мы работаем</a>
 </div>
-<figure class="hero-photo"><img src="/hero-logistics.webp" alt="Морской порт и грузовой аэропорт" width="1408" height="768" onerror="this.onerror=null;this.src='/aluminium-ingots-warehouse.webp'"></figure><figure class="route"><svg viewBox="0 0 640 170" role="img" aria-label="Европа → Юго-Восточная Азия"><path d="M70 110 Q320 0 570 110" fill="none" stroke="#0A3D62" stroke-width="1.2" stroke-dasharray="5 6"></path><path d="M70 110 C220 160 420 160 570 110" fill="none" stroke="#0A3D62" stroke-width="1.2"></path><circle cx="70" cy="110" r="9" fill="#0A3D62"></circle><circle cx="70" cy="110" r="14" fill="none" stroke="#0A3D62" stroke-width="1"></circle><circle cx="570" cy="110" r="6" fill="#17C3B2"></circle><text x="320" y="44" text-anchor="middle" class="rl">Авиаперевозка</text><text x="320" y="168" text-anchor="middle" class="rl">Морская перевозка</text><text x="70" y="78" text-anchor="middle" class="rp">Европа</text><text x="584" y="82" text-anchor="end" class="rp">Юго-Восточная Азия</text></svg></figure></div>
+<figure class="route"><svg viewBox="0 0 640 170" role="img" aria-label="Европа → Юго-Восточная Азия"><path d="M70 110 Q320 0 570 110" fill="none" stroke="#0A3D62" stroke-width="1.2" stroke-dasharray="5 6"></path><path d="M70 110 C220 160 420 160 570 110" fill="none" stroke="#0A3D62" stroke-width="1.2"></path><circle cx="70" cy="110" r="9" fill="#0A3D62"></circle><circle cx="70" cy="110" r="14" fill="none" stroke="#0A3D62" stroke-width="1"></circle><circle cx="570" cy="110" r="6" fill="#17C3B2"></circle><text x="320" y="44" text-anchor="middle" class="rl">Авиаперевозка</text><text x="320" y="168" text-anchor="middle" class="rl">Морская перевозка</text><text x="70" y="78" text-anchor="middle" class="rp">Европа</text><text x="584" y="82" text-anchor="end" class="rp">Юго-Восточная Азия</text></svg></figure></div>
 </div>
 </section>
 
@@ -330,4 +343,5 @@ dialog.gal-dlg figcaption{font-family:'Lora',Georgia,serif!important;font-style:
 
 
 <script>(function(){document.querySelectorAll('.burger').forEach(function(b){b.addEventListener('click',function(){var h=b.closest('header');var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});});document.querySelectorAll('.ed-nav a').forEach(function(a){a.addEventListener('click',function(){a.closest('header').classList.remove('open');});});})();</script>
+
 </body></html>
