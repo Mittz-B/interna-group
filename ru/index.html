@@ -167,6 +167,11 @@ dialog.gal-dlg figcaption{font-family:'Lora',Georgia,serif!important;font-style:
 .hero-cover p{font-size:1.12rem!important;line-height:1.7!important;color:#F2F2F0!important}
 
 .hero-btns{margin-top:40px!important;display:flex!important;justify-content:center;gap:14px;flex-wrap:wrap}
+
+.route{max-width:1000px!important;padding:24px 24px 18px!important}
+.route img{display:block;width:100%;height:auto}
+.route-legend{display:flex;justify-content:center;flex-wrap:wrap;gap:28px;margin-top:16px;font-family:'Manrope',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.route-legend span{display:inline-flex;align-items:center;gap:10px}
 </style></head>
 <body>
 <div data-lang="ru">
@@ -191,7 +196,7 @@ dialog.gal-dlg figcaption{font-family:'Lora',Georgia,serif!important;font-style:
 <a href="#ru-products" style="text-decoration: none; background: #1CB5AC; color: #062A33; font-weight: 600; padding: 14px 28px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Товары</a>
 <a href="#ru-process" style="text-decoration: none; border: 2px solid #5C8DAD; color: #FFFFFF; font-weight: 600; padding: 12px 26px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Как мы работаем</a>
 </div>
-<figure class="route"><svg viewBox="0 0 640 170" role="img" aria-label="Европа → Юго-Восточная Азия"><path d="M70 110 Q320 0 570 110" fill="none" stroke="#0A3D62" stroke-width="1.2" stroke-dasharray="5 6"></path><path d="M70 110 C220 160 420 160 570 110" fill="none" stroke="#0A3D62" stroke-width="1.2"></path><circle cx="70" cy="110" r="9" fill="#0A3D62"></circle><circle cx="70" cy="110" r="14" fill="none" stroke="#0A3D62" stroke-width="1"></circle><circle cx="570" cy="110" r="6" fill="#17C3B2"></circle><text x="320" y="44" text-anchor="middle" class="rl">Авиаперевозка</text><text x="320" y="168" text-anchor="middle" class="rl">Морская перевозка</text><text x="70" y="78" text-anchor="middle" class="rp">Европа</text><text x="584" y="82" text-anchor="end" class="rp">Юго-Восточная Азия</text></svg></figure></div>
+<figure class="route"><img src="/route-map.svg" alt="Карта морских и авиамаршрутов доставки в Юго-Восточную Азию и Китай" width="1000" height="729" loading="lazy"><figcaption class="route-legend"><span><svg width="34" height="8" aria-hidden="true"><line x1="0" y1="4" x2="34" y2="4" stroke="#17C3B2" stroke-width="3" stroke-linecap="round"></line></svg>Морская перевозка</span><span><svg width="34" height="8" aria-hidden="true"><line x1="0" y1="4" x2="34" y2="4" stroke="#0A3D62" stroke-width="2" stroke-dasharray="6 5"></line></svg>Авиаперевозка</span></figcaption></figure></div>
 </div>
 </section>
 
@@ -328,6 +333,7 @@ dialog.gal-dlg figcaption{font-family:'Lora',Georgia,serif!important;font-style:
 
 
 <script>(function(){document.querySelectorAll('.burger').forEach(function(b){b.addEventListener('click',function(){var h=b.closest('header');var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});});document.querySelectorAll('.ed-nav a').forEach(function(a){a.addEventListener('click',function(){a.closest('header').classList.remove('open');});});})();</script>
+
 
 
 
