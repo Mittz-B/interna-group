@@ -177,6 +177,10 @@ dialog.gal-dlg figcaption{font-family:'Lora',Georgia,serif!important;font-style:
 .route-legend span{display:inline-flex;align-items:center;gap:10px}
 
 .route{border:0!important;padding:0!important;max-width:1100px!important}
+
+section[id$="about"]{position:relative!important;overflow:hidden!important;padding-top:120px!important;padding-bottom:120px!important}
+section[id$="about"]::before{content:"";position:absolute;inset:0;background:url(/route-map.svg) center 40%/cover no-repeat;opacity:.09;pointer-events:none;z-index:0}
+section[id$="about"]>*{position:relative;z-index:1}
 </style></head>
 <body>
 <div data-lang="vi">
@@ -201,7 +205,7 @@ dialog.gal-dlg figcaption{font-family:'Lora',Georgia,serif!important;font-style:
 <a href="#vi-products" style="text-decoration: none; background: #1CB5AC; color: #062A33; font-weight: 600; padding: 14px 28px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Sản phẩm</a>
 <a href="#vi-process" style="text-decoration: none; border: 2px solid #5C8DAD; color: #FFFFFF; font-weight: 600; padding: 12px 26px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Quy trình</a>
 </div>
-<figure class="route"><img src="/route-map.svg" alt="Bản đồ tuyến vận chuyển đường biển và hàng không đến Đông Nam Á và Trung Quốc" width="1000" height="729" loading="lazy"></figure></div>
+</div>
 </div>
 </section>
 
@@ -337,6 +341,7 @@ dialog.gal-dlg figcaption{font-family:'Lora',Georgia,serif!important;font-style:
 
 
 <script>(function(){document.querySelectorAll('.burger').forEach(function(b){b.addEventListener('click',function(){var h=b.closest('header');var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});});document.querySelectorAll('.ed-nav a').forEach(function(a){a.addEventListener('click',function(){a.closest('header').classList.remove('open');});});})();</script>
+
 
 
 
