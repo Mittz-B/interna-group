@@ -42,6 +42,14 @@ a:focus-visible,button:focus-visible{outline:3px solid #1CB5AC;outline-offset:2p
 @media (max-width:600px){h1{font-size:2.2rem!important}h2{font-size:1.8rem!important}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .gal-dlg::backdrop{background:rgba(11,60,93,.75)}
+
+/*dark-about*/
+section[id$="about"]{background:#2B2B29!important;border:0!important}
+section[id$="about"]::before{opacity:.35!important}
+section[id$="about"] h2,section[id$="about"] h3,section[id$="about"] p,section[id$="about"] div{color:#FFFFFF!important}
+section[id$="about"] p{color:#ECECEA!important}
+section[id$="about"] div[style*="border-radius: 12px"]{background:transparent!important;border-color:#FFFFFF!important;color:#FFFFFF!important}
+section[id$="about"]+.ed-sec{border-top:0!important}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Interna Group LLC","alternateName":"ООО «Интерна Групп»","url":"https://www.internagroupp.com/","logo":"https://www.internagroupp.com/favicon-512.png","email":"info@internagroupp.com","telephone":"+7 347 246-10-68","foundingDate":"2021","address":{"@type":"PostalAddress","streetAddress":"13 Oblepikhovaya Street, Nagaevo","addressLocality":"Ufa","addressRegion":"Republic of Bashkortostan","postalCode":"450900","addressCountry":"RU"}}
