@@ -194,6 +194,11 @@ section[id$="about"]>*{position:relative;z-index:1}
 /*about-tone*/
 section[id$="about"]::before{opacity:1!important;filter:brightness(1.7) contrast(.9)!important}
 section[id$="about"]::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 50%,rgba(8,16,24,.76) 0%,rgba(8,16,24,.64) 60%,rgba(8,16,24,.56) 100%);pointer-events:none;z-index:0}
+
+/*docs-align*/
+section[id$="process"] div[style*="display: grid"]{grid-auto-rows:auto;align-items:stretch}
+section[id$="process"] div[style*="display: grid"]>div{display:grid!important;grid-row:span 4;grid-template-rows:subgrid;row-gap:0}
+section[id$="process"] div[style*="display: grid"]>div>p[style*="border-top"]{margin:0!important;align-self:start}
 </style></head>
 <body>
 <div data-lang="ru">
