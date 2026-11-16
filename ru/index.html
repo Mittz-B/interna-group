@@ -190,6 +190,10 @@ section[id$="about"]>*{position:relative;z-index:1}
 /*tone*/
 .hero-cover::after{background:radial-gradient(ellipse 70% 80% at 50% 50%,rgba(30,30,28,.80) 0%,rgba(36,36,34,.70) 60%,rgba(43,43,41,.62) 100%)!important}
 .hero-cover>img{filter:grayscale(1) contrast(.95)!important}
+
+/*about-tone*/
+section[id$="about"]::before{opacity:1!important;filter:grayscale(1) brightness(1.7) contrast(.9)!important}
+section[id$="about"]::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 50%,rgba(30,30,28,.80) 0%,rgba(36,36,34,.70) 60%,rgba(43,43,41,.62) 100%);pointer-events:none;z-index:0}
 </style></head>
 <body>
 <div data-lang="ru">
