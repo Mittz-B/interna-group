@@ -225,6 +225,15 @@ section p{line-height:1.65!important}
 footer.ed-foot h4{font-size:13px!important}
 .ed-copy{font-size:12px!important}
 dialog.gal-dlg>div:first-child button{font-size:14px!important}
+
+/*products-grid*/
+section[id$="products"] div[style*="display: grid"]{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))!important;gap:40px 32px!important}
+section[id$="products"] [style*="border-radius: 16px"] img,section[id$="products"] [style*="border-radius: 16px"]>svg{width:100%!important;height:auto!important;aspect-ratio:4/3;object-fit:cover}
+section[id$="products"] [style*="border-radius: 16px"]>div{text-align:left!important;padding:14px 0 0!important}
+section[id$="products"] [style*="border-radius: 16px"] h3{text-align:left!important;font-size:1.15rem!important;margin:0 0 8px!important}
+section[id$="products"] [style*="border-radius: 16px"]>div p{text-align:left!important;font-size:.95rem!important;line-height:1.6!important}
+section[id$="products"] .cap{text-align:left!important;font-size:12px!important;line-height:1.4!important;margin:0 0 14px!important;padding-bottom:12px;border-bottom:1px solid var(--hair);color:#8A8A85!important}
+@media (max-width:640px){section[id$="products"] div[style*="display: grid"]{grid-template-columns:1fr!important}}
 </style><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"></head>
 <body>
 <div data-lang="en">
